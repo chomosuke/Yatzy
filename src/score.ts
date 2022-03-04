@@ -28,6 +28,8 @@ export function score(roll: Roll, category: Category): number {
             return scoreNOfAKind(roll, 4);
         case Category.SmallStraight:
             return scoreStraight(roll, 1);
+        case Category.LargeStraight:
+            return scoreStraight(roll, 2);
         default:
             return 0;
     }
