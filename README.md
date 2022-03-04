@@ -1,5 +1,5 @@
-# typescript template project for node
-This is an opinionated typescript node template project
+# Yatzy
+template from https://github.com/chomosuke/typescript-template
 
 ## setup dev environment
 - Install node, npm and yarn.
@@ -7,6 +7,11 @@ This is an opinionated typescript node template project
     - This let vscode work with yarn properly.
 - Run `yarn` in project directory.
 
-If you dislike format on save, you can disable it in `.vscode/settings.json`.
+## tips
+- If you dislike format on save, you can disable it in `.vscode/settings.json`.
+- For TDD, you might want to run you test as frequently as possible, you can use the command `yarn test --watch` to do that.
 
-For TDD, you might want to run you test as frequent as possible, you can use the command `yarn test --watch` to do that.
+## how to run
+- `yarn serve` to run the program immediately
+- `yarn build` to build the program into javascript
+- `yarn start` to run the build result
