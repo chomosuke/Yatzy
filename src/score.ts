@@ -30,6 +30,8 @@ export function score(roll: Roll, category: Category): number {
             return scoreStraight(roll, 1);
         case Category.LargeStraight:
             return scoreStraight(roll, 2);
+        case Category.FullHouse:
+            return scoreFullHouse(roll);
         default:
             return 0;
     }
@@ -99,4 +101,12 @@ function scoreStraight(roll: Roll, start: number): number {
         }
     }
     return sum(roll);
+}
+
+function scoreFullHouse(roll: Roll): number {
+    const counts = Array.from(countArray(roll).entries());
+    if (counts[0][1] in [2, 3, 5] && counts.length <= 2) {
+        return sum(roll);
+    }
+    return 0;
 }
