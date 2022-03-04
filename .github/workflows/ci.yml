@@ -9,7 +9,7 @@ jobs:
       with:
         node-version: 16
     - run: npm install -g yarn
-    - run: yarn install --frozen-lockfile
+    - run: yarn install --immutable --immutable-cache
     - run: yarn build
   lint:
     runs-on: ubuntu-latest
