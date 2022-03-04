@@ -1,5 +1,4 @@
 {
-  "name": "typescript-template",
   "packageManager": "yarn@3.1.1",
   "scripts": {
     "serve": "ts-node ./src",
