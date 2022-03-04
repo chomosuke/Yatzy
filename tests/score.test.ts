@@ -9,6 +9,7 @@ describe('score a given roll with a given category', () => {
         { roll: [1, 1, 1, 1, 1], category: Category.Yatzy, expected: 50 },
         { roll: [1, 1, 1, 2, 1], category: Category.Yatzy, expected: 0 },
         { roll: [1, 1, 1, 2, 1], category: Category.Ones, expected: 4 },
+        { roll: [1, 1, 1, 2, 1], category: Category.Twos, expected: 1 },
     ])(
         'roll $roll in category $category should score $expected.',
         ({
