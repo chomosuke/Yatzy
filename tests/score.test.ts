@@ -22,8 +22,9 @@ describe('score a given roll with a given category', () => {
         [[1, 1, 6, 2, 6], Category.Pair, 12],
         [[3, 3, 3, 4, 1], Category.Pair, 6],
         [[3, 3, 3, 3, 1], Category.Pair, 6],
+        [[1, 1, 2, 3, 3], Category.TwoPairs, 8],
     ])(
-        'roll %p in category %s should score %p.',
+        'roll %p with category %s should score %p.',
         (roll: Roll, category: Category, expected: number) => {
             expect(score(roll, category)).toStrictEqual(expected);
         },
