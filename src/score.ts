@@ -13,6 +13,8 @@ export function score(roll: number[], category: Category): number {
             return count(roll, 1);
         case Category.Twos:
             return count(roll, 2);
+        case Category.Threes:
+            return count(roll, 3);
         default:
             return 0;
     }
