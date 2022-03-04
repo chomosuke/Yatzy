@@ -1,7 +1,6 @@
 import { allEqual } from './helpers/allEqual';
 import { Category } from './Category';
 import { sum } from './helpers/sum';
-import { count } from './helpers/count';
 import { assertUnreachable } from './helpers/assertUnreachable';
 
 export function score(roll: number[], category: Category): number {
@@ -16,7 +15,7 @@ export function score(roll: number[], category: Category): number {
         case Category.Fours:
         case Category.Fives:
         case Category.Sixes:
-            return count(roll, categoryToNum(category));
+            return sum(roll.filter((e) => e === categoryToNum(category)));
         default:
             return 0;
     }
