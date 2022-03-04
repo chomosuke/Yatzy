@@ -22,6 +22,10 @@ export function score(roll: Roll, category: Category): number {
             return scoreNPairs(roll, 1);
         case Category.TwoPairs:
             return scoreNPairs(roll, 2);
+        case Category.ThreeOfAKind:
+            return scoreNOfAKind(roll, 3);
+        case Category.FourOfAKind:
+            return scoreNOfAKind(roll, 4);
         default:
             return 0;
     }
@@ -72,4 +76,14 @@ function scoreNPairs(roll: Roll, n: number): number {
             .sort((a, b) => b - a)
             .slice(0, n),
     ) * 2; // sum the value and * 2
+}
+
+function scoreNOfAKind(roll: Roll, n: number): number {
+    const counts = countArray(roll);
+    for (const [value, count] of counts.entries()) {
+        if (count >= n) {
+            return value * n;
+        }
+    }
+    return 0;
 }
