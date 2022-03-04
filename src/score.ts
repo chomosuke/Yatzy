@@ -19,7 +19,9 @@ export function score(roll: Roll, category: Category): number {
         case Category.Sixes:
             return sum(roll.filter((e) => e === categoryToNum(category)));
         case Category.Pair:
-            return scorePair(roll);
+            return scoreNPairs(roll, 1);
+        case Category.TwoPairs:
+            return scoreNPairs(roll, 2);
         default:
             return 0;
     }
@@ -52,10 +54,22 @@ function categoryToNum(
     }
 }
 
-function scorePair(roll: Roll): number {
-    return Math.max(
-        ...Array.from(countArray(roll).entries()) // Array of count of all identical value of roll
-            .filter(([_value, count]) => count >= 2) // only retain the value with count more than 2
-            .map(([value, _count]) => value), // remove map [value, count] to value
-    ) * 2; // highest value that appeared more than 2 times * 2
+function scoreNPairs(roll: Roll, n: number): number {
+    const allPairs = Array.from(countArray(roll).entries())
+        // map [value, count] to [...values] where value is the value of one
+        // pair
+        .map(([value, count]) => Array(Math.floor(count / 2)).fill(value))
+        // convert the array from [[...values], [...values]] to
+        // [...values, ...values]
+        .flat();
+    if (allPairs.length < n) {
+        return 0;
+    }
+    console.log(allPairs, n);
+    return sum(
+        allPairs
+            // get the largest n pairs
+            .sort((a, b) => b - a)
+            .slice(0, n),
+    ) * 2; // sum the value and * 2
 }
