@@ -10,6 +10,8 @@ parserOptions:
   project: 'tsconfig.eslint.json'
 plugins:
   - '@typescript-eslint'
+ignorePatterns:
+  - "build/**/*"
 rules:
   no-console: off
   '@typescript-eslint/indent': 
