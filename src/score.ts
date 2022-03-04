@@ -26,6 +26,8 @@ export function score(roll: Roll, category: Category): number {
             return scoreNOfAKind(roll, 3);
         case Category.FourOfAKind:
             return scoreNOfAKind(roll, 4);
+        case Category.SmallStraight:
+            return scoreStraight(roll, 1);
         default:
             return 0;
     }
@@ -85,4 +87,14 @@ function scoreNOfAKind(roll: Roll, n: number): number {
         }
     }
     return 0;
+}
+
+function scoreStraight(roll: Roll, start: number): number {
+    roll.sort();
+    for (let i = 0; i < roll.length; i++) {
+        if (roll[i] !== i + start) {
+            return 0;
+        }
+    }
+    return sum(roll);
 }

@@ -4,7 +4,7 @@
     "serve": "ts-node ./src",
     "build": "tsc",
     "start": "node ./build/index.js",
-    "test": "jest ./tests --passWithNoTests",
+    "test": "jest --passWithNoTests",
     "lint": "eslint . --ext .ts --fix",
     "lint:nofix": "eslint . --ext .ts"
   },

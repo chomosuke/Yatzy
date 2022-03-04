@@ -40,6 +40,8 @@ rules:
       ignoreTemplateLiterals: true
       ignoreRegExpLiterals: true
   '@typescript-eslint/type-annotation-spacing': error
+  no-plusplus: off
+  no-minusminus: off
 
   # try to ensure cohesion
   max-lines:
