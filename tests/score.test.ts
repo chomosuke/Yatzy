@@ -26,6 +26,11 @@ describe('score a given roll with a given category', () => {
         [[1, 1, 2, 3, 4], Category.TwoPairs, 0],
         [[1, 1, 2, 2, 2], Category.TwoPairs, 6],
         [[3, 3, 3, 4, 5], Category.ThreeOfAKind, 9],
+        [[3, 3, 4, 5, 6], Category.ThreeOfAKind, 0],
+        [[3, 3, 3, 3, 1], Category.ThreeOfAKind, 9],
+        [[2, 2, 2, 2, 5], Category.FourOfAKind, 8],
+        [[2, 2, 2, 5, 5], Category.FourOfAKind, 0],
+        [[2, 2, 2, 2, 2], Category.FourOfAKind, 8],
     ])(
         'roll %p with category %s should score %p.',
         (roll: Roll, category: Category, expected: number) => {

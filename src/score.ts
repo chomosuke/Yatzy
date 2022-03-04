@@ -69,7 +69,6 @@ function scoreNPairs(roll: Roll, n: number): number {
     if (allPairs.length < n) {
         return 0;
     }
-    console.log(allPairs, n);
     return sum(
         allPairs
             // get the largest n pairs
