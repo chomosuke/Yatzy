@@ -32,14 +32,16 @@ describe('score a given roll with a given category', () => {
         [[2, 2, 2, 5, 5], Category.FourOfAKind, 0],
         [[2, 2, 2, 2, 2], Category.FourOfAKind, 8],
         [[3, 1, 4, 5, 2], Category.SmallStraight, 15],
+        [[3, 6, 4, 5, 2], Category.SmallStraight, 0],
         [[3, 6, 4, 5, 2], Category.LargeStraight, 20],
+        [[3, 6, 3, 5, 2], Category.LargeStraight, 0],
         [[1, 1, 2, 2, 2], Category.FullHouse, 8],
         [[2, 2, 3, 3, 4], Category.FullHouse, 0],
         [[4, 4, 4, 4, 4], Category.FullHouse, 0],
         [[4, 4, 4, 2, 4], Category.FullHouse, 0],
         [[4, 4, 4, 2, 2], Category.FullHouse, 16],
     ])(
-        'roll %p with category %s should score %p.',
+        'roll %p with category %s should score %i.',
         (roll: Roll, category: Category, expected: number) => {
             expect(score(roll, category)).toStrictEqual(expected);
         },
