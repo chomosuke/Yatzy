@@ -32,3 +32,7 @@ rules:
     - selector: 'WithStatement'
       message: '`with` is disallowed in strict mode because it makes code impossible to predict and optimize.'
   '@typescript-eslint/no-use-before-define': off
+  max-len: 
+    - error
+    - 80
+  '@typescript-eslint/type-annotation-spacing': error
