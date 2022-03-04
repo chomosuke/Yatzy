@@ -11,6 +11,8 @@ export function score(roll: number[], category: Category): number {
             return allEqual(roll) ? 50 : 0;
         case Category.Ones:
             return count(roll, 1);
+        case Category.Twos:
+            return count(roll, 2);
         default:
             return 0;
     }
