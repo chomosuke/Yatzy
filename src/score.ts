@@ -1,5 +1,6 @@
 import { Category } from './Category';
+import { sum } from './sum';
 
 export function score(roll: number[], category: Category): number {
-    return 15;
+    return sum(roll);
 }
