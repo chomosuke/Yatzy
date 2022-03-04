@@ -1,6 +1,7 @@
-import { allEqual } from './allEqual';
+import { allEqual } from './helpers/allEqual';
 import { Category } from './Category';
-import { sum } from './sum';
+import { sum } from './helpers/sum';
+import { count } from './helpers/count';
 
 export function score(roll: number[], category: Category): number {
     switch (category) {
@@ -8,6 +9,8 @@ export function score(roll: number[], category: Category): number {
             return sum(roll);
         case Category.Yatzy:
             return allEqual(roll) ? 50 : 0;
+        case Category.Ones:
+            return count(roll, 1);
         default:
             return 0;
     }
