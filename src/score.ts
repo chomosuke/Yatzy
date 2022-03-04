@@ -2,8 +2,10 @@ import { allEqual } from './helpers/allEqual';
 import { Category } from './Category';
 import { sum } from './helpers/sum';
 import { assertUnreachable } from './helpers/assertUnreachable';
+import { Roll } from './Roll';
+import { countArray } from './helpers/count';
 
-export function score(roll: number[], category: Category): number {
+export function score(roll: Roll, category: Category): number {
     switch (category) {
         case Category.Chance:
             return sum(roll);
@@ -16,6 +18,8 @@ export function score(roll: number[], category: Category): number {
         case Category.Fives:
         case Category.Sixes:
             return sum(roll.filter((e) => e === categoryToNum(category)));
+        case Category.Pair:
+            return scorePair(roll);
         default:
             return 0;
     }
@@ -46,4 +50,12 @@ function categoryToNum(
         default:
             return assertUnreachable(category);
     }
+}
+
+function scorePair(roll: Roll): number {
+    return Math.max(
+        ...Array.from(countArray(roll).entries()) // Array of count of all identical value of roll
+            .filter(([_value, count]) => count >= 2) // only retain the value with count more than 2
+            .map(([value, _count]) => value), // remove map [value, count] to value
+    ) * 2; // highest value that appeared more than 2 times * 2
 }

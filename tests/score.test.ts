@@ -1,8 +1,9 @@
 import { score } from '../src/score';
 import { Category } from '../src/Category';
+import { Roll } from '../src/Roll';
 
 describe('score a given roll with a given category', () => {
-    it.each([
+    it.each<[Roll, Category, number]>([
         [[1, 2, 3, 4, 5], Category.Chance, 15],
         [[1, 1, 3, 3, 6], Category.Chance, 14],
         [[4, 5, 5, 6, 1], Category.Chance, 21],
@@ -21,7 +22,7 @@ describe('score a given roll with a given category', () => {
     ])(
         'roll $roll in category $category should score $expected.',
         (
-            roll: number[],
+            roll: Roll,
             category: Category,
             expected: number,
         ) => {
