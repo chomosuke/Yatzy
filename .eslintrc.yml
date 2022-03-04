@@ -36,3 +36,11 @@ rules:
     - error
     - 80
   '@typescript-eslint/type-annotation-spacing': error
+  max-lines:
+    - error
+    - 1000
+  max-statements:
+    - error
+    - 100
+  max-depth: error
+  complexity: error
