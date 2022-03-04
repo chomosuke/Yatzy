@@ -33,7 +33,7 @@ export function score(roll: Roll, category: Category): number {
         case Category.FullHouse:
             return scoreFullHouse(roll);
         default:
-            return 0;
+            return assertUnreachable(category);
     }
 }
 

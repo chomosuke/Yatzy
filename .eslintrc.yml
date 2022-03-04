@@ -46,9 +46,9 @@ rules:
   # try to ensure cohesion
   max-lines:
     - error
-    - 1000
+    - 500
   max-statements:
     - error
-    - 100
+    - 50
   max-depth: error
   complexity: error
