@@ -1,4 +1,4 @@
-export function allEqual(arr: any[]): boolean {
+export function allEqual(arr: unknown[]): boolean {
     if (arr.length === 0) {
         return true;
     }
