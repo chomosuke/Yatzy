@@ -916,7 +916,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/prettier@npm:^2.1.5, @types/prettier@npm:^2.4.4":
+"@types/prettier@npm:^2.1.5":
   version: 2.4.4
   resolution: "@types/prettier@npm:2.4.4"
   checksum: 2c2cc57efd49c7d8907415a72f96c84a6dd8696dd3bf8aa4ca3a667427bebf71cbfbc912673624bdfc935d272d1c008c639cf155f6449315990a4dc110f0d216
@@ -2037,9 +2037,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-chomosuke@npm:^0.0.6":
-  version: 0.0.6
-  resolution: "eslint-config-chomosuke@npm:0.0.6"
+"eslint-config-chomosuke@npm:^0.1.0":
+  version: 0.1.0
+  resolution: "eslint-config-chomosuke@npm:0.1.0"
   dependencies:
     eslint-config-airbnb-base: ^15.0.0
     eslint-config-airbnb-typescript: ^16.1.0
@@ -2048,7 +2048,7 @@ __metadata:
     "@typescript-eslint/parser": ^5.0.0
     eslint: ^8.10.0
     eslint-plugin-import: ^2.25.4
-  checksum: f6f6d193802e8feadc025c2541a85cd1b5b0c8bf3fa739835289909c5e3c5547574b893c5addd956d04b8d5cd4ec0f1c5dccad733778c21de3a9c09286bde844
+  checksum: d308eafe19a72b88a45823bd740dbbe4e688c1f544cb3c0ccd54c152231a89bc6b8b384212825e614f21e4c1acf079a384d6e869930b01a9e5d93d876572314b
   languageName: node
   linkType: hard
 
@@ -4332,15 +4332,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^2.5.1":
-  version: 2.5.1
-  resolution: "prettier@npm:2.5.1"
-  bin:
-    prettier: bin-prettier.js
-  checksum: 21b9408476ea1c544b0e45d51ceb94a84789ff92095abb710942d780c862d0daebdb29972d47f6b4d0f7ebbfb0ffbf56cc2cfa3e3e9d1cca54864af185b15b66
-  languageName: node
-  linkType: hard
-
 "pretty-format@npm:^27.0.0, pretty-format@npm:^27.5.1":
   version: 27.5.1
   resolution: "pretty-format@npm:27.5.1"
@@ -4521,15 +4512,13 @@ __metadata:
     "@tsconfig/node16": ^1.0.1
     "@types/jest": ^27.4.0
     "@types/node": ^17.0.17
-    "@types/prettier": ^2.4.4
     "@typescript-eslint/eslint-plugin": ^5.11.0
     "@typescript-eslint/parser": ^5.11.0
     eslint: ^8.10.0
-    eslint-config-chomosuke: ^0.0.6
+    eslint-config-chomosuke: ^0.1.0
     eslint-import-resolver-node: ^0.3.6
     eslint-plugin-import: ^2.25.4
     jest: ^27.5.1
-    prettier: ^2.5.1
     source-map-support: ^0.5.21
     ts-jest: ^27.1.3
     ts-node: ^10.6.0

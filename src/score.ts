@@ -1,9 +1,9 @@
-import { allEqual } from './helpers/allEqual';
 import { Category } from './Category';
-import { sum } from './helpers/sum';
-import { assertUnreachable } from './helpers/assertUnreachable';
 import { Roll } from './Roll';
+import { allEqual } from './helpers/allEqual';
+import { assertUnreachable } from './helpers/assertUnreachable';
 import { countArray } from './helpers/count';
+import { sum } from './helpers/sum';
 
 export function score(roll: Roll, category: Category): number {
     switch (category) {
