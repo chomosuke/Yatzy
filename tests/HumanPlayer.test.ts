@@ -73,8 +73,9 @@ Player 1 has rolled 1, 2, 3, 4, 5.`,
                 [1, 2, 3, 4, 5],
                 ['Chance'],
                 `
-Place in category (press h to show options): `,
-                '',
+Place roll in category: `,
+                `
+Player 11 has rolled 1, 2, 3, 4, 5.`,
                 Category.Chance,
             ],
         ])('%s', async (_description, playerName, roll, userInput, readPrompt, consoleOutput, category) => {

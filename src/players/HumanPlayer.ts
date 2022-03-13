@@ -33,6 +33,13 @@ export class HumanPlayer extends Player {
     }
 
     async getCategory(roll: Roll): Promise<Category> {
-        throw Error();
+        this.showStatus(roll);
+        const input = await read('Place roll in category: ');
+        for (const category of Object.values(Category)) {
+            if (input === category) {
+                return category;
+            }
+        }
+        throw Error('didn\'t match');
     }
 }
