@@ -68,7 +68,7 @@ Player 1 has rolled 1, 2, 3, 4, 5.`,
     describe('choose category', () => {
         it.each<[string, string, Roll, string[], string, string, Category]>([
             [
-                'Chance',
+                'choose Chance',
                 'Player 11',
                 [1, 2, 3, 4, 5],
                 ['Chance'],
@@ -77,6 +77,29 @@ Place roll in category: `,
                 `
 Player 11 has rolled 1, 2, 3, 4, 5.`,
                 Category.Chance,
+            ],
+            [
+                'choose FullHouse',
+                'Player 11',
+                [1, 2, 3, 4, 5],
+                ['FullHouse'],
+                `
+Place roll in category: `,
+                `
+Player 11 has rolled 1, 2, 3, 4, 5.`,
+                Category.FullHouse,
+            ],
+            [
+                'typo once',
+                'Player 11',
+                [1, 2, 3, 4, 5],
+                ['FulHouse', 'FullHouse'],
+                `
+Place roll in category: 
+Category not recognized, please try again (press h to list all categories): `,
+                `
+Player 11 has rolled 1, 2, 3, 4, 5.`,
+                Category.FullHouse,
             ],
         ])('%s', async (_description, playerName, roll, userInput, readPrompt, consoleOutput, category) => {
             const player = new HumanPlayer(playerName);
