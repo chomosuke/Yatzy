@@ -34,12 +34,16 @@ export class HumanPlayer extends Player {
 
     async getCategory(roll: Roll): Promise<Category> {
         this.showStatus(roll);
-        const input = await read('Place roll in category: ');
-        for (const category of Object.values(Category)) {
-            if (input === category) {
-                return category;
+        let input = await read('Place roll in category: ');
+        // eslint-disable-next-line no-constant-condition
+        while (true) {
+            for (const category of Object.values(Category)) {
+                if (input === category) {
+                    return category;
+                }
             }
+            // eslint-disable-next-line no-await-in-loop
+            input = await read('Category not recognized, please try again (press h to list all categories): ');
         }
-        throw Error('didn\'t match');
     }
 }
