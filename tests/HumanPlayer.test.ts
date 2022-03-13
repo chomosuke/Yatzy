@@ -101,6 +101,20 @@ Category not recognized, please try again (press h to list all categories): `,
 Player 11 has rolled 1, 2, 3, 4, 5.`,
                 Category.FullHouse,
             ],
+            [
+                'typo many times',
+                'Player 11',
+                [1, 2, 3, 4, 5],
+                ['FulHouse', 'e', 'Fuse', 'FullHouse'],
+                `
+Place roll in category: 
+Category not recognized, please try again (press h to list all categories): 
+Category not recognized, please try again (press h to list all categories): 
+Category not recognized, please try again (press h to list all categories): `,
+                `
+Player 11 has rolled 1, 2, 3, 4, 5.`,
+                Category.FullHouse,
+            ],
         ])('%s', async (_description, playerName, roll, userInput, readPrompt, consoleOutput, category) => {
             const player = new HumanPlayer(playerName);
 
