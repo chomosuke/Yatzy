@@ -1,6 +1,6 @@
-import { score } from '../src/score';
 import { Category } from '../src/Category';
 import { Roll } from '../src/Roll';
+import { score } from '../src/score';
 
 describe('score a given roll with a given category', () => {
     it.each<[Roll, Category, number]>([

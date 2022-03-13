@@ -1,6 +1,6 @@
 env:
   node: true
-extends: eslint-config-chomosuke
+extends: chomosuke
 parser: '@typescript-eslint/parser'
 parserOptions:
   ecmaVersion: latest

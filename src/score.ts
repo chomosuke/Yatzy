@@ -1,9 +1,9 @@
-import { allEqual } from './helpers/allEqual';
 import { Category } from './Category';
-import { sum } from './helpers/sum';
-import { assertUnreachable } from './helpers/assertUnreachable';
 import { Roll } from './Roll';
+import { allEqual } from './helpers/allEqual';
+import { assertUnreachable } from './helpers/assertUnreachable';
 import { countArray } from './helpers/count';
+import { sum } from './helpers/sum';
 
 export function score(roll: Roll, category: Category): number {
     switch (category) {
@@ -105,7 +105,6 @@ function scoreStraight(roll: Roll, start: number): number {
 
 function scoreFullHouse(roll: Roll): number {
     const counts = Array.from(countArray(roll).entries());
-    console.log(counts);
     if ([2, 3].includes(counts[0][1]) && counts.length <= 2) {
         return sum(roll);
     }
