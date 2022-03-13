@@ -119,7 +119,7 @@ Player 11 has rolled 1, 2, 3, 4, 5.`,
                 'list all categories',
                 'Player 11',
                 [1, 2, 3, 4, 5],
-                ['FulHouse', 'e', 'Fuse', 'FullHouse'],
+                ['FulHouse', 'h', 'FullHouse'],
                 `
 Place roll in category: 
 Category not recognized, please try again (press h to list all categories): 

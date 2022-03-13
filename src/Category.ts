@@ -15,3 +15,9 @@ export enum Category {
     LargeStraight = 'LargeStraight',
     FullHouse = 'FullHouse',
 }
+
+export function listAllCategories() {
+    for (const category of Object.values(Category)) {
+        console.log(category);
+    }
+}
