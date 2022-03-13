@@ -2037,7 +2037,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-chomosuke@npm:^0.1.1":
+"eslint-config-chomosuke@npm:^0.1.0":
   version: 0.1.1
   resolution: "eslint-config-chomosuke@npm:0.1.1"
   dependencies:
@@ -4522,7 +4522,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": ^5.11.0
     "@typescript-eslint/parser": ^5.11.0
     eslint: ^8.10.0
-    eslint-config-chomosuke: ^0.1.1
+    eslint-config-chomosuke: ^0.1.0
     eslint-import-resolver-node: ^0.3.6
     eslint-plugin-import: ^2.25.4
     jest: ^27.5.1

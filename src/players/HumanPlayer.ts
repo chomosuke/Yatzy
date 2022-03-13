@@ -1,4 +1,5 @@
 import { Decision, Decisions, ensureDecisions } from '../Decisions';
+import { Category } from '../Category';
 import { Player } from './Player';
 import { Roll } from '../Roll';
 import ordinal from 'ordinal';
@@ -12,8 +13,12 @@ export class HumanPlayer extends Player {
         this.name = name;
     }
 
-    async getDecisions(roll: Roll): Promise<Decisions> {
+    private showStatus(roll: Roll) {
         console.log(`${this.name} has rolled ${roll.join(', ')}.`);
+    }
+
+    async getDecisions(roll: Roll): Promise<Decisions> {
+        this.showStatus(roll);
         const decisions: Decision[] = [];
         for (let i = 0; i < roll.length; i++) {
             // eslint-disable-next-line no-await-in-loop
@@ -25,5 +30,9 @@ export class HumanPlayer extends Player {
             decisions.push(input === 'r' ? Decision.ReRoll : Decision.Hold);
         }
         return ensureDecisions(decisions);
+    }
+
+    async getCategory(roll: Roll): Promise<Category> {
+        throw Error();
     }
 }
