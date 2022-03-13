@@ -20,7 +20,7 @@ export class HumanPlayer extends Player {
             let input = await read(`Hold or re-roll for the ${ordinal(i + 1)} dice (current: ${roll[i]})? h/r:`);
             while (!['r', 'h'].includes(input)) {
                 // eslint-disable-next-line no-await-in-loop
-                input = await read('Please type h for hold and r for re-roll.');
+                input = await read('Please type h for hold and r for re-roll:');
             }
             decisions.push(input === 'r' ? Decision.ReRoll : Decision.Hold);
         }
