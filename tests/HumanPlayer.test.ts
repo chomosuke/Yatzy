@@ -4,6 +4,7 @@ import { Category } from '../src/Category';
 import { HumanPlayer } from '../src/players/HumanPlayer';
 import { Roll } from '../src/Roll';
 import { read } from '../src/helpers/readlinePromise';
+import { testConsole } from './testConsole';
 
 jest.mock('../src/helpers/readlinePromise');
 
@@ -13,11 +14,6 @@ const mockLog = global.console.log as jest.Mock<undefined, [string]>;
 const mockRead = read as jest.Mock<Promise<string>, [string?]>;
 
 describe('A HumanPlayer taking in user input to make decisions', () => {
-    beforeEach(() => {
-        mockLog.mockReset();
-        mockRead.mockReset();
-    });
-
     describe('hold or re-roll', () => {
         it.each<[string, string, Roll, string[], string, string, Decisions]>([
             [
@@ -32,7 +28,7 @@ Hold or re-roll for the 3rd dice (current: 3)? h/r:
 Hold or re-roll for the 4th dice (current: 4)? h/r:
 Hold or re-roll for the 5th dice (current: 5)? h/r:`,
                 `
-Player 1 has rolled 1, 2, 3, 4, 5.`,
+`,
                 [Decision.Hold, Decision.Hold, Decision.ReRoll, Decision.ReRoll, Decision.Hold],
             ],
             [
@@ -50,18 +46,21 @@ Hold or re-roll for the 5th dice (current: 5)? h/r:
 Please type h for hold and r for re-roll:
 Please type h for hold and r for re-roll:`,
                 `
-Player 1 has rolled 1, 2, 3, 4, 5.`,
+`,
                 [Decision.Hold, Decision.Hold, Decision.ReRoll, Decision.ReRoll, Decision.Hold],
             ],
         ])('%s', async (_description, playerName, roll, userInput, readPrompt, consoleOutput, decisions) => {
-            const player = new HumanPlayer(playerName);
-
-            mockRead.mockImplementation(async (_) => userInput.shift()!);
-
-            expect(await player.getDecisions(roll)).toStrictEqual(decisions);
-
-            expect(`\n${mockLog.mock.calls.map((e) => e[0]).join('\n')}`).toStrictEqual(consoleOutput);
-            expect(`\n${mockRead.mock.calls.map((e) => e[0]).join('\n')}`).toStrictEqual(readPrompt);
+            await testConsole(
+                userInput,
+                readPrompt,
+                consoleOutput,
+                async () => {
+                    expect(await new HumanPlayer(playerName).getDecisions(roll))
+                        .toStrictEqual(decisions);
+                },
+                mockRead,
+                mockLog,
+            );
         });
     });
 
@@ -144,14 +143,68 @@ FullHouse`,
                 Category.FullHouse,
             ],
         ])('%s', async (_description, playerName, roll, userInput, readPrompt, consoleOutput, category) => {
-            const player = new HumanPlayer(playerName);
+            await testConsole(
+                userInput,
+                readPrompt,
+                consoleOutput,
+                async () => {
+                    expect(await new HumanPlayer(playerName).getCategory(roll))
+                        .toStrictEqual(category);
+                },
+                mockRead,
+                mockLog,
+            );
+        });
+    });
 
-            mockRead.mockImplementation(async (_) => userInput.shift()!);
-
-            expect(await player.getCategory(roll)).toStrictEqual(category);
-
-            expect(`\n${mockLog.mock.calls.map((e) => e[0]).join('\n')}`).toStrictEqual(consoleOutput);
-            expect(`\n${mockRead.mock.calls.map((e) => e[0]).join('\n')}`).toStrictEqual(readPrompt);
+    describe('ending turn', () => {
+        it.each<[string, string, Roll, string[], string, string, boolean]>([
+            [
+                'ending',
+                'ppp',
+                [1, 3, 2, 4, 5],
+                ['y'],
+                `
+Would you like to end your turn? (y/n)`,
+                `
+ppp has rolled 1, 3, 2, 4, 5.`,
+                true,
+            ],
+            [
+                'not ending',
+                'ppp',
+                [1, 3, 2, 4, 5],
+                ['n'],
+                `
+Would you like to end your turn? (y/n)`,
+                `
+ppp has rolled 1, 3, 2, 4, 5.`,
+                false,
+            ],
+            [
+                'wrong input',
+                'ppp',
+                [1, 3, 2, 4, 5],
+                ['blabla', 'n'],
+                `
+Would you like to end your turn? (y/n)
+Would you like to end your turn? (y/n)`,
+                `
+ppp has rolled 1, 3, 2, 4, 5.
+Unrecognized input, please type "y" or "n".`,
+                false,
+            ],
+        ])('%s', async (_description, playerName, roll, userInput, readPrompt, consoleOutput, ending) => {
+            await testConsole(
+                userInput,
+                readPrompt,
+                consoleOutput,
+                async () => {
+                    expect(await new HumanPlayer(playerName).endTurn(roll)).toStrictEqual(ending);
+                },
+                mockRead,
+                mockLog,
+            );
         });
     });
 });
