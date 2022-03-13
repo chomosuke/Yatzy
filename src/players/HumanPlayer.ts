@@ -18,8 +18,8 @@ export class HumanPlayer extends Player {
         console.log(`${this.name} has rolled ${roll.join(', ')}.`);
     }
 
+    // eslint-disable-next-line class-methods-use-this
     async getDecisions(roll: Roll): Promise<Decisions> {
-        this.showStatus(roll);
         const decisions: Decision[] = [];
         for (let i = 0; i < roll.length; i++) {
             let input = await read(`Hold or re-roll for the ${ordinal(i + 1)} dice (current: ${roll[i]})? h/r:`);
@@ -34,7 +34,6 @@ export class HumanPlayer extends Player {
     async getCategory(roll: Roll): Promise<Category> {
         this.showStatus(roll);
         let input = await read('Place roll in category: ');
-        // eslint-disable-next-line no-constant-condition
         while (true) {
             for (const category of Object.values(Category)) {
                 if (input === category) {
@@ -47,5 +46,15 @@ export class HumanPlayer extends Player {
                 input = await read('Place roll in category: ');
             }
         }
+    }
+
+    async endTurn(roll: Roll): Promise<boolean> {
+        this.showStatus(roll);
+        let input = await read('Would you like to end your turn? (y/n)');
+        while (!['y', 'n'].includes(input)) {
+            console.log('Unrecognized input, please type "y" or "n".');
+            input = await read('Would you like to end your turn? (y/n)');
+        }
+        return input === 'y';
     }
 }
