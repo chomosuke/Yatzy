@@ -105,7 +105,6 @@ function scoreStraight(roll: Roll, start: number): number {
 
 function scoreFullHouse(roll: Roll): number {
     const counts = Array.from(countArray(roll).entries());
-    console.log(counts);
     if ([2, 3].includes(counts[0][1]) && counts.length <= 2) {
         return sum(roll);
     }
