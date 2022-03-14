@@ -22,11 +22,11 @@ describe('HumanPlayer', () => {
                 [1, 2, 3, 4, 5],
                 ['h', 'h', 'r', 'r', 'h'],
                 `
-Hold or re-roll for the 1st dice (current: 1)? h/r:
-Hold or re-roll for the 2nd dice (current: 2)? h/r:
-Hold or re-roll for the 3rd dice (current: 3)? h/r:
-Hold or re-roll for the 4th dice (current: 4)? h/r:
-Hold or re-roll for the 5th dice (current: 5)? h/r:`,
+Hold or re-roll for the 1st dice (current: 1)?: (h/r)
+Hold or re-roll for the 2nd dice (current: 2)?: (h/r)
+Hold or re-roll for the 3rd dice (current: 3)?: (h/r)
+Hold or re-roll for the 4th dice (current: 4)?: (h/r)
+Hold or re-roll for the 5th dice (current: 5)?: (h/r)`,
                 '',
                 [Decision.Hold, Decision.Hold, Decision.ReRoll, Decision.ReRoll, Decision.Hold],
             ],
@@ -36,14 +36,14 @@ Hold or re-roll for the 5th dice (current: 5)? h/r:`,
                 [1, 2, 3, 4, 5],
                 ['h', 'h', 'y', 'r', 'r', 'something', 'j', 'h'],
                 `
-Hold or re-roll for the 1st dice (current: 1)? h/r:
-Hold or re-roll for the 2nd dice (current: 2)? h/r:
-Hold or re-roll for the 3rd dice (current: 3)? h/r:
-Please type h for hold and r for re-roll:
-Hold or re-roll for the 4th dice (current: 4)? h/r:
-Hold or re-roll for the 5th dice (current: 5)? h/r:
-Please type h for hold and r for re-roll:
-Please type h for hold and r for re-roll:`,
+Hold or re-roll for the 1st dice (current: 1)?: (h/r)
+Hold or re-roll for the 2nd dice (current: 2)?: (h/r)
+Hold or re-roll for the 3rd dice (current: 3)?: (h/r)
+Please type h for hold and r for re-roll: 
+Hold or re-roll for the 4th dice (current: 4)?: (h/r)
+Hold or re-roll for the 5th dice (current: 5)?: (h/r)
+Please type h for hold and r for re-roll: 
+Please type h for hold and r for re-roll: `,
                 '',
                 [Decision.Hold, Decision.Hold, Decision.ReRoll, Decision.ReRoll, Decision.Hold],
             ],
@@ -245,7 +245,7 @@ Unrecognized input, please type "y" or "n".`,
             `
 ppup's score: 54`,
             async () => {
-                new HumanPlayer('ppup').showScore(54);
+                new HumanPlayer('ppup').printScore(54);
             },
             mockRead,
             mockLog,
@@ -259,7 +259,7 @@ ppup's score: 54`,
             `
 ppup scored 54 more points.`,
             async () => {
-                new HumanPlayer('ppup').showScoreGained(54);
+                new HumanPlayer('ppup').printScoreGained(54);
             },
             mockRead,
             mockLog,
@@ -271,9 +271,23 @@ ppup scored 54 more points.`,
             [],
             '',
             `
-pineappleapplepen has rolled 2, 1, 1, 2, 4.`,
+penpineappleapplepen has rolled 2, 1, 1, 2, 4.`,
             async () => {
-                new HumanPlayer('pineappleapplepen').showRoll([2, 1, 1, 2, 4]);
+                new HumanPlayer('penpineappleapplepen').printRoll([2, 1, 1, 2, 4]);
+            },
+            mockRead,
+            mockLog,
+        );
+    });
+
+    it('print winning', async () => {
+        await testConsole(
+            [],
+            '',
+            `
+penpineappleapplepen wins with a score of 541.`,
+            async () => {
+                new HumanPlayer('penpineappleapplepen').printWinningMessage(541);
             },
             mockRead,
             mockLog,

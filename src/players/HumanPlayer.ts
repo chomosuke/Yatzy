@@ -9,22 +9,22 @@ import { read } from '../helpers/readlinePromise';
 export class HumanPlayer extends Player {
     private name: string;
 
+    getName() {
+        return this.name;
+    }
+
     constructor(name: string) {
         super();
         this.name = name;
-    }
-
-    showRoll(roll: Roll) {
-        console.log(`${this.name} has rolled ${roll.join(', ')}.`);
     }
 
     // eslint-disable-next-line class-methods-use-this
     async getDecisions(roll: Roll): Promise<Decisions> {
         const decisions: Decision[] = [];
         for (let i = 0; i < roll.length; i++) {
-            let input = await read(`Hold or re-roll for the ${ordinal(i + 1)} dice (current: ${roll[i]})? h/r:`);
+            let input = await read(`Hold or re-roll for the ${ordinal(i + 1)} dice (current: ${roll[i]})?: (h/r)`);
             while (!['r', 'h'].includes(input)) {
-                input = await read('Please type h for hold and r for re-roll:');
+                input = await read('Please type h for hold and r for re-roll: ');
             }
             decisions.push(input === 'r' ? Decision.ReRoll : Decision.Hold);
         }
@@ -58,13 +58,5 @@ export class HumanPlayer extends Player {
             input = await read('Would you like to end your turn? (y/n)');
         }
         return input === 'y';
-    }
-
-    showScore(score: number): void {
-        console.log(`${this.name}'s score: ${score}`);
-    }
-
-    showScoreGained(score: number): void {
-        console.log(`${this.name} scored ${score} more points.`);
     }
 }

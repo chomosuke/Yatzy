@@ -19,6 +19,10 @@ const mockRollDice = rollDice as jest.Mock<DiceResult, []>;
 class MockPlayer extends Player {
     private readonly name: string;
 
+    getName(): string {
+        return this.name;
+    }
+
     private readonly prando: Prando;
 
     constructor(name: string, seed: number) {
@@ -56,17 +60,21 @@ class MockPlayer extends Player {
     }
 
     // eslint-disable-next-line class-methods-use-this
-    showScore(score: number): void {
+    override printScore(score: number): void {
         console.log(`${this.name}'s score: ${score}`);
     }
 
     // eslint-disable-next-line class-methods-use-this
-    showScoreGained(score: number): void {
+    override printScoreGained(score: number): void {
         console.log(`${this.name} has scored ${score} more points`);
     }
 
-    showRoll(roll: Roll): void {
+    override printRoll(roll: Roll): void {
         console.log(`${this.name} has rolled: ${roll}`);
+    }
+
+    override printWinningMessage(score: number): void {
+        console.log(`${this.name} wins with a score of ${score}.`);
     }
 }
 
@@ -77,7 +85,7 @@ describe('dummy computer player playing against each other', () => {
         mockRollDice.mockReset();
         mockRollDice.mockImplementation(() => ensureDiceResult(prando.nextInt(1, 6)));
 
-        await play(
+        await play([
             new MockPlayer(
                 'Player1',
                 seed,
@@ -86,29 +94,8 @@ describe('dummy computer player playing against each other', () => {
                 'Player2',
                 seed,
             ),
-        );
+        ]);
 
-        switch (seed) {
-            case 1:
-                expect(mockLog.mock.calls).toMatchInlineSnapshot();
-                break;
-            case 2:
-                expect(mockLog.mock.calls).toMatchInlineSnapshot();
-                break;
-            case 3:
-                expect(mockLog.mock.calls).toMatchInlineSnapshot();
-                break;
-            case 4:
-                expect(mockLog.mock.calls).toMatchInlineSnapshot();
-                break;
-            case 5:
-                expect(mockLog.mock.calls).toMatchInlineSnapshot();
-                break;
-            case 6:
-                expect(mockLog.mock.calls).toMatchInlineSnapshot();
-                break;
-            default:
-                throw new Error('Unhandled sample.');
-        }
+        expect(`${mockLog.mock.calls.map((e) => `${e[0]}`).join('\n')}`).toMatchSnapshot();
     });
 });

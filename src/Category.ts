@@ -15,3 +15,11 @@ export enum Category {
     LargeStraight = 'LargeStraight',
     FullHouse = 'FullHouse',
 }
+
+export function getAllCategories() {
+    const categories: Category[] = [];
+    for (const category of Object.values(Category)) {
+        categories.push(category);
+    }
+    return categories;
+}
