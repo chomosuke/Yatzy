@@ -266,9 +266,9 @@ ppup's score: 54`,
             [],
             '\n',
             `
-ppup score 54 more points`,
+ppup scored 54 more points.`,
             async () => {
-                new HumanPlayer('ppup').showNewScore(54);
+                new HumanPlayer('ppup').showScoreGained(54);
             },
             mockRead,
             mockLog,

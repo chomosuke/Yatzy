@@ -63,4 +63,8 @@ export class HumanPlayer extends Player {
     showScore(score: number): void {
         console.log(`${this.name}'s score: ${score}`);
     }
+
+    showScoreGained(score: number): void {
+        console.log(`${this.name} scored ${score} more points.`);
+    }
 }
