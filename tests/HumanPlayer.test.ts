@@ -175,6 +175,23 @@ Category not recognized, please try again (press h to list all available categor
                 '',
                 Category.FullHouse,
             ],
+            [
+                'press h the first time',
+                'penPineappleApplePen',
+                [1, 2, 3, 4, 5],
+                [
+                    Category.FullHouse,
+                    Category.Fives,
+                ],
+                ['h', 'FullHouse'],
+                `
+Place roll in category: 
+Place roll in category: `,
+                `
+Fives
+FullHouse`,
+                Category.FullHouse,
+            ],
         ])('%s', async (_description, playerName, roll, categories, userInput, readPrompt, consoleOutput, category) => {
             await testConsole(
                 userInput,
