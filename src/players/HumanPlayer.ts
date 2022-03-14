@@ -31,8 +31,8 @@ export class HumanPlayer extends Player {
         return ensureDecisions(decisions);
     }
 
-    async getCategory(roll: Roll, categories: Category[]): Promise<Category> {
-        this.showStatus(roll);
+    // eslint-disable-next-line class-methods-use-this
+    async getCategory(_roll: Roll, categories: Category[]): Promise<Category> {
         let input = await read('Place roll in category: ');
         while (true) {
             for (const category of categories) {

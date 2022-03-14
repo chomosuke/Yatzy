@@ -27,7 +27,7 @@ Hold or re-roll for the 2nd dice (current: 2)? h/r:
 Hold or re-roll for the 3rd dice (current: 3)? h/r:
 Hold or re-roll for the 4th dice (current: 4)? h/r:
 Hold or re-roll for the 5th dice (current: 5)? h/r:`,
-                '\n',
+                '',
                 [Decision.Hold, Decision.Hold, Decision.ReRoll, Decision.ReRoll, Decision.Hold],
             ],
             [
@@ -44,7 +44,7 @@ Hold or re-roll for the 4th dice (current: 4)? h/r:
 Hold or re-roll for the 5th dice (current: 5)? h/r:
 Please type h for hold and r for re-roll:
 Please type h for hold and r for re-roll:`,
-                '\n',
+                '',
                 [Decision.Hold, Decision.Hold, Decision.ReRoll, Decision.ReRoll, Decision.Hold],
             ],
         ])('%s', async (_description, playerName, roll, userInput, readPrompt, consoleOutput, decisions) => {
@@ -72,8 +72,7 @@ Please type h for hold and r for re-roll:`,
                 ['Chance'],
                 `
 Place roll in category: `,
-                `
-Player 11 has rolled 1, 2, 3, 4, 5.`,
+                '',
                 Category.Chance,
             ],
             [
@@ -88,8 +87,7 @@ Player 11 has rolled 1, 2, 3, 4, 5.`,
                 ['FullHouse'],
                 `
 Place roll in category: `,
-                `
-Player 11 has rolled 1, 2, 3, 4, 5.`,
+                '',
                 Category.FullHouse,
             ],
             [
@@ -105,8 +103,7 @@ Player 11 has rolled 1, 2, 3, 4, 5.`,
                 `
 Place roll in category: 
 Category not recognized, please try again (press h to list all available categories): `,
-                `
-Player 11 has rolled 1, 2, 3, 4, 5.`,
+                '',
                 Category.FullHouse,
             ],
             [
@@ -120,8 +117,7 @@ Place roll in category:
 Category not recognized, please try again (press h to list all available categories): 
 Category not recognized, please try again (press h to list all available categories): 
 Category not recognized, please try again (press h to list all available categories): `,
-                `
-Player 11 has rolled 1, 2, 3, 4, 5.`,
+                '',
                 Category.FullHouse,
             ],
             [
@@ -149,7 +145,6 @@ Place roll in category:
 Category not recognized, please try again (press h to list all available categories): 
 Place roll in category: `,
                 `
-Player 11 has rolled 1, 2, 3, 4, 5.
 Chance
 Yatzy
 Ones
@@ -177,8 +172,7 @@ FullHouse`,
                 `
 Place roll in category: 
 Category not recognized, please try again (press h to list all available categories): `,
-                `
-Player 11 has rolled 1, 2, 3, 4, 5.`,
+                '',
                 Category.FullHouse,
             ],
         ])('%s', async (_description, playerName, roll, categories, userInput, readPrompt, consoleOutput, category) => {
@@ -250,7 +244,7 @@ Unrecognized input, please type "y" or "n".`,
     it('Show score', async () => {
         await testConsole(
             [],
-            '\n',
+            '',
             `
 ppup's score: 54`,
             async () => {
@@ -264,7 +258,7 @@ ppup's score: 54`,
     it('Show new score', async () => {
         await testConsole(
             [],
-            '\n',
+            '',
             `
 ppup scored 54 more points.`,
             async () => {
