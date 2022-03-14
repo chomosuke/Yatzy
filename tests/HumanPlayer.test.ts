@@ -180,8 +180,8 @@ Category not recognized, please try again (press h to list all available categor
                 'penPineappleApplePen',
                 [1, 2, 3, 4, 5],
                 [
-                    Category.FullHouse,
                     Category.Fives,
+                    Category.FullHouse,
                 ],
                 ['h', 'FullHouse'],
                 `

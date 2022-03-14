@@ -35,18 +35,18 @@ export class HumanPlayer extends Player {
     async getCategory(_roll: Roll, categories: Category[]): Promise<Category> {
         let input = await read('Place roll in category: ');
         while (true) {
-            for (const category of categories) {
-                if (input === category) {
-                    return category;
-                }
-            }
-            input = await read('Category not recognized, please try again (press h to list all available categories): ');
             if (input === 'h') {
                 for (const category of categories) {
                     console.log(category);
                 }
                 input = await read('Place roll in category: ');
             }
+            for (const category of categories) {
+                if (input === category) {
+                    return category;
+                }
+            }
+            input = await read('Category not recognized, please try again (press h to list all available categories): ');
         }
     }
 
