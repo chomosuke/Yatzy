@@ -192,6 +192,26 @@ Fives
 FullHouse`,
                 Category.FullHouse,
             ],
+            [
+                'press h the first & second time',
+                'penPineappleApplePen',
+                [1, 2, 3, 4, 5],
+                [
+                    Category.Fives,
+                    Category.FullHouse,
+                ],
+                ['h', 'h', 'FullHouse'],
+                `
+Place roll in category: 
+Place roll in category: 
+Place roll in category: `,
+                `
+Fives
+FullHouse
+Fives
+FullHouse`,
+                Category.FullHouse,
+            ],
         ])('%s', async (_description, playerName, roll, categories, userInput, readPrompt, consoleOutput, category) => {
             await testConsole(
                 userInput,

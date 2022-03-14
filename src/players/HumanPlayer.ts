@@ -35,7 +35,7 @@ export class HumanPlayer extends Player {
     async getCategory(_roll: Roll, categories: Category[]): Promise<Category> {
         let input = await read('Place roll in category: ');
         while (true) {
-            if (input === 'h') {
+            while (input === 'h') {
                 for (const category of categories) {
                     console.log(category);
                 }
