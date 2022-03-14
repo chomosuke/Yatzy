@@ -22,7 +22,7 @@ export class HumanPlayer extends Player {
     async getDecisions(roll: Roll): Promise<Decisions> {
         const decisions: Decision[] = [];
         for (let i = 0; i < roll.length; i++) {
-            let input = await read(`Hold or re-roll for the ${ordinal(i + 1)} dice (current: ${roll[i]})?: (h/r)`);
+            let input = await read(`Hold or re-roll for the ${ordinal(i + 1)} dice (current: ${roll[i]})? (h/r)`);
             while (!['r', 'h'].includes(input)) {
                 input = await read('Please type h for hold and r for re-roll: ');
             }
