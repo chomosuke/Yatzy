@@ -92,7 +92,7 @@ describe('dummy computer player playing against each other', () => {
             ),
             new MockPlayer(
                 'Player2',
-                seed,
+                seed + 100, // same seed causes both player to play indentically
             ),
         ]);
 

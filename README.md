@@ -26,3 +26,4 @@
     - You can opt out of zero install by gitignoring different files, more detail at [.gitignore](.gitignore).
 - eslint plugin for vscode (recommended in [.vscode base/extensions.json](.vscode%20base/extensions.json)) help you catch your linting error at the earliest second.
 - vscode-zipfs (recommended in [.vscode base/extensions.json](.vscode%20base/extensions.json)) let vscode work with yarn's zip files.
+- It uses jest [snapshot testing](https://jestjs.io/docs/snapshot-testing) to ensure that `play()` always behave the same given two pseudo random players.
