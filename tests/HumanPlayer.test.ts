@@ -13,7 +13,7 @@ global.console.log = jest.fn<undefined, [string]>();
 const mockLog = global.console.log as jest.Mock<undefined, [string]>;
 const mockRead = read as jest.Mock<Promise<string>, [string?]>;
 
-describe('A HumanPlayer taking in user input to make decisions', () => {
+describe('HumanPlayer', () => {
     describe('hold or re-roll', () => {
         it.each<[string, string, Roll, string[], string, string, Decisions]>([
             [
@@ -252,8 +252,7 @@ Unrecognized input, please type "y" or "n".`,
             [],
             '\n',
             `
-ppup's score: 54
-`,
+ppup's score: 54`,
             async () => {
                 new HumanPlayer('ppup').showScore(54);
             },

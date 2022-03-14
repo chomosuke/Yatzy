@@ -59,4 +59,8 @@ export class HumanPlayer extends Player {
         }
         return input === 'y';
     }
+
+    showScore(score: number): void {
+        console.log(`${this.name}'s score: ${score}`);
+    }
 }

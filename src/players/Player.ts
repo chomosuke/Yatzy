@@ -6,4 +6,5 @@ export abstract class Player {
     abstract getDecisions(roll: Roll): Promise<Decisions>;
     abstract getCategory(roll: Roll, categories: Category[]): Promise<Category>;
     abstract endTurn(roll: Roll): Promise<boolean>;
+    abstract showScore(score: number): void;
 }
