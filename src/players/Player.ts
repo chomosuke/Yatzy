@@ -4,6 +4,6 @@ import { Roll } from '../Roll';
 
 export abstract class Player {
     abstract getDecisions(roll: Roll): Promise<Decisions>;
-    abstract getCategory(roll: Roll): Promise<Category>;
+    abstract getCategory(roll: Roll, categories: Category[]): Promise<Category>;
     abstract endTurn(roll: Roll): Promise<boolean>;
 }

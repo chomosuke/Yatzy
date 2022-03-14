@@ -27,8 +27,7 @@ Hold or re-roll for the 2nd dice (current: 2)? h/r:
 Hold or re-roll for the 3rd dice (current: 3)? h/r:
 Hold or re-roll for the 4th dice (current: 4)? h/r:
 Hold or re-roll for the 5th dice (current: 5)? h/r:`,
-                `
-`,
+                '\n',
                 [Decision.Hold, Decision.Hold, Decision.ReRoll, Decision.ReRoll, Decision.Hold],
             ],
             [
@@ -45,8 +44,7 @@ Hold or re-roll for the 4th dice (current: 4)? h/r:
 Hold or re-roll for the 5th dice (current: 5)? h/r:
 Please type h for hold and r for re-roll:
 Please type h for hold and r for re-roll:`,
-                `
-`,
+                '\n',
                 [Decision.Hold, Decision.Hold, Decision.ReRoll, Decision.ReRoll, Decision.Hold],
             ],
         ])('%s', async (_description, playerName, roll, userInput, readPrompt, consoleOutput, decisions) => {
@@ -65,11 +63,12 @@ Please type h for hold and r for re-roll:`,
     });
 
     describe('choose category', () => {
-        it.each<[string, string, Roll, string[], string, string, Category]>([
+        it.each<[string, string, Roll, Category[], string[], string, string, Category]>([
             [
-                'choose Chance',
+                'choose one category',
                 'Player 11',
                 [1, 2, 3, 4, 5],
+                [Category.Chance],
                 ['Chance'],
                 `
 Place roll in category: `,
@@ -78,9 +77,14 @@ Player 11 has rolled 1, 2, 3, 4, 5.`,
                 Category.Chance,
             ],
             [
-                'choose FullHouse',
+                'choose another category',
                 'Player 11',
                 [1, 2, 3, 4, 5],
+                [
+                    Category.Chance,
+                    Category.FullHouse,
+                    Category.Fives,
+                ],
                 ['FullHouse'],
                 `
 Place roll in category: `,
@@ -92,10 +96,15 @@ Player 11 has rolled 1, 2, 3, 4, 5.`,
                 'typo once',
                 'Player 11',
                 [1, 2, 3, 4, 5],
+                [
+                    Category.Chance,
+                    Category.FullHouse,
+                    Category.Fives,
+                ],
                 ['FulHouse', 'FullHouse'],
                 `
 Place roll in category: 
-Category not recognized, please try again (press h to list all categories): `,
+Category not recognized, please try again (press h to list all available categories): `,
                 `
 Player 11 has rolled 1, 2, 3, 4, 5.`,
                 Category.FullHouse,
@@ -104,24 +113,40 @@ Player 11 has rolled 1, 2, 3, 4, 5.`,
                 'typo many times',
                 'Player 11',
                 [1, 2, 3, 4, 5],
+                [Category.FullHouse],
                 ['FulHouse', 'e', 'Fuse', 'FullHouse'],
                 `
 Place roll in category: 
-Category not recognized, please try again (press h to list all categories): 
-Category not recognized, please try again (press h to list all categories): 
-Category not recognized, please try again (press h to list all categories): `,
+Category not recognized, please try again (press h to list all available categories): 
+Category not recognized, please try again (press h to list all available categories): 
+Category not recognized, please try again (press h to list all available categories): `,
                 `
 Player 11 has rolled 1, 2, 3, 4, 5.`,
                 Category.FullHouse,
             ],
             [
-                'list all categories',
+                'list all available categories',
                 'Player 11',
                 [1, 2, 3, 4, 5],
+                [
+                    Category.Chance,
+                    Category.Yatzy,
+                    Category.Ones,
+                    Category.Twos,
+                    Category.Threes,
+                    Category.Fives,
+                    Category.Sixes,
+                    Category.Pair,
+                    Category.TwoPairs,
+                    Category.ThreeOfAKind,
+                    Category.SmallStraight,
+                    Category.LargeStraight,
+                    Category.FullHouse,
+                ],
                 ['FulHouse', 'h', 'FullHouse'],
                 `
 Place roll in category: 
-Category not recognized, please try again (press h to list all categories): 
+Category not recognized, please try again (press h to list all available categories): 
 Place roll in category: `,
                 `
 Player 11 has rolled 1, 2, 3, 4, 5.
@@ -130,25 +155,39 @@ Yatzy
 Ones
 Twos
 Threes
-Fours
 Fives
 Sixes
 Pair
 TwoPairs
 ThreeOfAKind
-FourOfAKind
 SmallStraight
 LargeStraight
 FullHouse`,
                 Category.FullHouse,
             ],
-        ])('%s', async (_description, playerName, roll, userInput, readPrompt, consoleOutput, category) => {
+            [
+                'valid but not avialable category once',
+                'Player 11',
+                [1, 2, 3, 4, 5],
+                [
+                    Category.FullHouse,
+                    Category.Fives,
+                ],
+                ['Chance', 'FullHouse'],
+                `
+Place roll in category: 
+Category not recognized, please try again (press h to list all available categories): `,
+                `
+Player 11 has rolled 1, 2, 3, 4, 5.`,
+                Category.FullHouse,
+            ],
+        ])('%s', async (_description, playerName, roll, categories, userInput, readPrompt, consoleOutput, category) => {
             await testConsole(
                 userInput,
                 readPrompt,
                 consoleOutput,
                 async () => {
-                    expect(await new HumanPlayer(playerName).getCategory(roll))
+                    expect(await new HumanPlayer(playerName).getCategory(roll, categories))
                         .toStrictEqual(category);
                 },
                 mockRead,

@@ -1,6 +1,6 @@
 /* eslint-disable no-await-in-loop */
 import ordinal from 'ordinal';
-import { Category, listAllCategories } from '../Category';
+import { Category } from '../Category';
 import { Decision, Decisions, ensureDecisions } from '../Decisions';
 import { Player } from './Player';
 import { Roll } from '../Roll';
@@ -31,18 +31,20 @@ export class HumanPlayer extends Player {
         return ensureDecisions(decisions);
     }
 
-    async getCategory(roll: Roll): Promise<Category> {
+    async getCategory(roll: Roll, categories: Category[]): Promise<Category> {
         this.showStatus(roll);
         let input = await read('Place roll in category: ');
         while (true) {
-            for (const category of Object.values(Category)) {
+            for (const category of categories) {
                 if (input === category) {
                     return category;
                 }
             }
-            input = await read('Category not recognized, please try again (press h to list all categories): ');
+            input = await read('Category not recognized, please try again (press h to list all available categories): ');
             if (input === 'h') {
-                listAllCategories();
+                for (const category of categories) {
+                    console.log(category);
+                }
                 input = await read('Place roll in category: ');
             }
         }
