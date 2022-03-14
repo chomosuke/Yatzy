@@ -260,4 +260,18 @@ ppup's score: 54`,
             mockLog,
         );
     });
+
+    it('Show new score', async () => {
+        await testConsole(
+            [],
+            '\n',
+            `
+ppup score 54 more points`,
+            async () => {
+                new HumanPlayer('ppup').showNewScore(54);
+            },
+            mockRead,
+            mockLog,
+        );
+    });
 });
