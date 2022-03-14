@@ -14,7 +14,7 @@ export class HumanPlayer extends Player {
         this.name = name;
     }
 
-    private showStatus(roll: Roll) {
+    showRoll(roll: Roll) {
         console.log(`${this.name} has rolled ${roll.join(', ')}.`);
     }
 
@@ -50,8 +50,8 @@ export class HumanPlayer extends Player {
         }
     }
 
-    async endTurn(roll: Roll): Promise<boolean> {
-        this.showStatus(roll);
+    // eslint-disable-next-line class-methods-use-this
+    async endTurn(_roll: Roll): Promise<boolean> {
         let input = await read('Would you like to end your turn? (y/n)');
         while (!['y', 'n'].includes(input)) {
             console.log('Unrecognized input, please type "y" or "n".');

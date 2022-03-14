@@ -199,8 +199,7 @@ Category not recognized, please try again (press h to list all available categor
                 ['y'],
                 `
 Would you like to end your turn? (y/n)`,
-                `
-ppp has rolled 1, 3, 2, 4, 5.`,
+                '',
                 true,
             ],
             [
@@ -210,8 +209,7 @@ ppp has rolled 1, 3, 2, 4, 5.`,
                 ['n'],
                 `
 Would you like to end your turn? (y/n)`,
-                `
-ppp has rolled 1, 3, 2, 4, 5.`,
+                '',
                 false,
             ],
             [
@@ -223,7 +221,6 @@ ppp has rolled 1, 3, 2, 4, 5.`,
 Would you like to end your turn? (y/n)
 Would you like to end your turn? (y/n)`,
                 `
-ppp has rolled 1, 3, 2, 4, 5.
 Unrecognized input, please type "y" or "n".`,
                 false,
             ],
@@ -263,6 +260,20 @@ ppup's score: 54`,
 ppup scored 54 more points.`,
             async () => {
                 new HumanPlayer('ppup').showScoreGained(54);
+            },
+            mockRead,
+            mockLog,
+        );
+    });
+
+    it('Show roll', async () => {
+        await testConsole(
+            [],
+            '',
+            `
+pineappleapplepen has rolled 2, 1, 1, 2, 4.`,
+            async () => {
+                new HumanPlayer('pineappleapplepen').showRoll([2, 1, 1, 2, 4]);
             },
             mockRead,
             mockLog,

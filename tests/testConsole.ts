@@ -12,6 +12,6 @@ export async function testConsole(
 
     await assertions();
 
-    expect(`\n${mockLog.mock.calls.map((e) => e[0]).join('\n')}`).toStrictEqual(consoleOutput);
-    expect(`\n${mockRead.mock.calls.map((e) => e[0]).join('\n')}`).toStrictEqual(readPrompt);
+    expect(`${mockLog.mock.calls.map((e) => `\n${e[0]}`).join('')}`).toStrictEqual(consoleOutput);
+    expect(`${mockRead.mock.calls.map((e) => `\n${e[0]}`).join('')}`).toStrictEqual(readPrompt);
 }
