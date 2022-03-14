@@ -246,4 +246,19 @@ Unrecognized input, please type "y" or "n".`,
             );
         });
     });
+
+    it('Show score', async () => {
+        await testConsole(
+            [],
+            '\n',
+            `
+ppup's score: 54
+`,
+            async () => {
+                new HumanPlayer('ppup').showScore(54);
+            },
+            mockRead,
+            mockLog,
+        );
+    });
 });
