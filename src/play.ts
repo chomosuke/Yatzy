@@ -51,6 +51,8 @@ export async function play(players: Player[]): Promise<void> {
     }
     if (winnerIndexs.length > 1) {
         console.log(`Drawn between ${winnerIndexs.map((i) => players[i].getName()).join(', ')}`);
+    } else if (winnerIndexs.length === 1) {
+        console.log(`${players[winnerIndexs[0]].getName()} wins with a score of ${scores[winnerIndexs[0]]}!`);
     }
 }
 

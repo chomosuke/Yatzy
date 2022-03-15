@@ -87,9 +87,11 @@ describe('dummy computer player playing against each other', () => {
         [5, false],
         [6, true], // test drawing
     ])('Sample game %d', async (seed, drawing) => {
+        mockRollDice.mockReset();
+        mockLog.mockReset();
+
         const prando = new Prando(seed);
 
-        mockRollDice.mockReset();
         mockRollDice.mockImplementation(() => ensureDiceResult(drawing ? 1 : prando.nextInt(1, 6)));
 
         await play([
