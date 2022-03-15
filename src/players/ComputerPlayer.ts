@@ -14,6 +14,17 @@ const chooseIfScore = [
     Category.FullHouse,
 ];
 
+const rankedCategories = [
+    Category.Ones,
+    Category.Twos,
+    Category.Threes,
+    Category.Fours,
+    Category.Fives,
+    Category.Sixes,
+    Category.Pair,
+    Category.Chance,
+];
+
 export class ComputerPlayer extends Player {
     private readonly name: string;
 
@@ -38,31 +49,30 @@ export class ComputerPlayer extends Player {
     }
 
     // eslint-disable-next-line class-methods-use-this
-    private static getCategoryPrivate(roll: Roll, categoriesIn: Category[]): Category {
-        const categories = [...categoriesIn];
+    private static getCategoryPrivate(roll: Roll, categories: Category[]): Category {
         for (const category of chooseIfScore) {
             if (categories.includes(category)) {
                 if (score(roll, category) > 0) {
                     return category;
                 }
-                // we know this category scored 0
-                categories.filter((c) => c !== category);
             }
         }
 
-        if (categories.length === 0) {
-            return categoriesIn[0];
-        }
-        let maxCategory = categories[0];
-        let maxScore = score(roll, maxCategory);
-        for (const category of categories) {
-            const scored = score(roll, category);
-            if (scored > maxScore) {
-                maxScore = scored;
-                maxCategory = category;
+        let maxCategory: Category | null = null;
+        let maxScore = 0;
+        for (const category of rankedCategories) {
+            if (categories.includes(category)) {
+                const scored = score(roll, category);
+                if (scored > maxScore) {
+                    maxScore = scored;
+                    maxCategory = category;
+                }
             }
         }
 
+        if (maxCategory === null) {
+            return categories[0];
+        }
         return maxCategory;
     }
 

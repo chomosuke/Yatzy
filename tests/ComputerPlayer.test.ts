@@ -20,6 +20,14 @@ describe('ComputerPlayer', () => {
                     Category.Yatzy,
                 ],
             ],
+            [
+                [1, 1, 1, 1, 1],
+                Category.Ones,
+                [
+                    Category.Chance,
+                    Category.Ones,
+                ],
+            ],
         ])('For roll: %o, should choose category: %s out of %o', async (roll, category, categories) => {
             const playerName = 'Player 1';
             await testConsole(
