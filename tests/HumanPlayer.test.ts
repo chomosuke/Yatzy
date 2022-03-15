@@ -4,7 +4,7 @@ import { Category } from '../src/Category';
 import { HumanPlayer } from '../src/players/HumanPlayer';
 import { Roll } from '../src/Roll';
 import { read } from '../src/helpers/readlinePromise';
-import { testConsole } from './testConsole';
+import { testReadConsole } from './testConsole';
 
 jest.mock('../src/helpers/readlinePromise');
 
@@ -48,7 +48,7 @@ Please type h for hold and r for re-roll: `,
                 [Decision.Hold, Decision.Hold, Decision.ReRoll, Decision.ReRoll, Decision.Hold],
             ],
         ])('%s', async (_description, playerName, roll, userInput, readPrompt, consoleOutput, decisions) => {
-            await testConsole(
+            await testReadConsole(
                 userInput,
                 readPrompt,
                 consoleOutput,
@@ -213,7 +213,7 @@ FullHouse`,
                 Category.FullHouse,
             ],
         ])('%s', async (_description, playerName, roll, categories, userInput, readPrompt, consoleOutput, category) => {
-            await testConsole(
+            await testReadConsole(
                 userInput,
                 readPrompt,
                 consoleOutput,
@@ -262,7 +262,7 @@ Unrecognized input, please type "y" or "n".`,
                 false,
             ],
         ])('%s', async (_description, playerName, roll, userInput, readPrompt, consoleOutput, ending) => {
-            await testConsole(
+            await testReadConsole(
                 userInput,
                 readPrompt,
                 consoleOutput,
@@ -276,7 +276,7 @@ Unrecognized input, please type "y" or "n".`,
     });
 
     it('Show score', async () => {
-        await testConsole(
+        await testReadConsole(
             [],
             '',
             `
@@ -290,7 +290,7 @@ ppup's score: 54`,
     });
 
     it('Show new score', async () => {
-        await testConsole(
+        await testReadConsole(
             [],
             '',
             `
@@ -304,7 +304,7 @@ ppup scored 54 more points.`,
     });
 
     it('Show roll', async () => {
-        await testConsole(
+        await testReadConsole(
             [],
             '',
             `
@@ -318,7 +318,7 @@ penpineappleapplepen has rolled 2, 1, 1, 2, 4.`,
     });
 
     it('print winning', async () => {
-        await testConsole(
+        await testReadConsole(
             [],
             '',
             `
