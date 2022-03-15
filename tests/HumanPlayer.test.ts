@@ -39,12 +39,15 @@ Hold or re-roll for the 5th dice (current: 5)? (h/r)`,
 Hold or re-roll for the 1st dice (current: 1)? (h/r)
 Hold or re-roll for the 2nd dice (current: 2)? (h/r)
 Hold or re-roll for the 3rd dice (current: 3)? (h/r)
-Please type h for hold and r for re-roll: 
+Hold or re-roll for the 3rd dice (current: 3)? (h/r)
 Hold or re-roll for the 4th dice (current: 4)? (h/r)
 Hold or re-roll for the 5th dice (current: 5)? (h/r)
-Please type h for hold and r for re-roll: 
-Please type h for hold and r for re-roll: `,
-                '',
+Hold or re-roll for the 5th dice (current: 5)? (h/r)
+Hold or re-roll for the 5th dice (current: 5)? (h/r)`,
+                `
+Please type h for hold and r for re-roll.
+Please type h for hold and r for re-roll.
+Please type h for hold and r for re-roll.`,
                 [Decision.Hold, Decision.Hold, Decision.ReRoll, Decision.ReRoll, Decision.Hold],
             ],
         ])('%s', async (_description, playerName, roll, userInput, readPrompt, consoleOutput, decisions) => {
