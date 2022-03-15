@@ -9402,7 +9402,7 @@ ThreeOfAKind
 Category: ThreeOfAKind
 Player2 has scored 0 more points
 Player2's score: 52
-Player1 has rolled: 4,4,6,1,4
+Player1 has rolled: 1,1,1,1,1
 End: true
 Categories left:
 Chance
@@ -9421,9 +9421,9 @@ SmallStraight
 LargeStraight
 FullHouse
 Category: Pair
-Player1 has scored 8 more points
-Player1's score: 8
-Player2 has rolled: 1,3,4,6,2
+Player1 has scored 2 more points
+Player1's score: 2
+Player2 has rolled: 1,1,1,1,1
 End: true
 Categories left:
 Chance
@@ -9441,10 +9441,10 @@ FourOfAKind
 SmallStraight
 LargeStraight
 FullHouse
-Category: Ones
-Player2 has scored 1 more points
-Player2's score: 1
-Player1 has rolled: 1,4,4,5,2
+Category: Pair
+Player2 has scored 2 more points
+Player2's score: 2
+Player1 has rolled: 1,1,1,1,1
 End: true
 Categories left:
 Chance
@@ -9462,32 +9462,29 @@ SmallStraight
 LargeStraight
 FullHouse
 Category: Ones
-Player1 has scored 1 more points
-Player1's score: 9
-Player2 has rolled: 6,3,1,2,4
-End: false
-Decisions: h,r,r,h,r
-Player2 has rolled: 6,6,3,2,5
+Player1 has scored 5 more points
+Player1's score: 7
+Player2 has rolled: 1,1,1,1,1
 End: true
 Categories left:
 Chance
 Yatzy
+Ones
 Twos
 Threes
 Fours
 Fives
 Sixes
-Pair
 TwoPairs
 ThreeOfAKind
 FourOfAKind
 SmallStraight
 LargeStraight
 FullHouse
-Category: LargeStraight
-Player2 has scored 0 more points
-Player2's score: 1
-Player1 has rolled: 6,1,2,3,4
+Category: Ones
+Player2 has scored 5 more points
+Player2's score: 7
+Player1 has rolled: 1,1,1,1,1
 End: true
 Categories left:
 Chance
@@ -9504,12 +9501,9 @@ SmallStraight
 LargeStraight
 FullHouse
 Category: Yatzy
-Player1 has scored 0 more points
-Player1's score: 9
-Player2 has rolled: 6,6,2,4,1
-End: false
-Decisions: r,r,r,h,r
-Player2 has rolled: 5,4,4,4,3
+Player1 has scored 50 more points
+Player1's score: 57
+Player2 has rolled: 1,1,1,1,1
 End: true
 Categories left:
 Chance
@@ -9519,19 +9513,19 @@ Threes
 Fours
 Fives
 Sixes
-Pair
 TwoPairs
 ThreeOfAKind
 FourOfAKind
 SmallStraight
+LargeStraight
 FullHouse
-Category: Chance
-Player2 has scored 20 more points
-Player2's score: 21
-Player1 has rolled: 4,2,3,5,2
+Category: Yatzy
+Player2 has scored 50 more points
+Player2's score: 57
+Player1 has rolled: 1,1,1,1,1
 End: false
 Decisions: r,r,h,h,r
-Player1 has rolled: 5,4,3,5,2
+Player1 has rolled: 1,1,1,1,1
 End: true
 Categories left:
 Chance
@@ -9547,30 +9541,33 @@ SmallStraight
 LargeStraight
 FullHouse
 Category: FourOfAKind
-Player1 has scored 0 more points
-Player1's score: 9
-Player2 has rolled: 2,2,6,5,5
+Player1 has scored 4 more points
+Player1's score: 61
+Player2 has rolled: 1,1,1,1,1
+End: false
+Decisions: r,r,h,h,r
+Player2 has rolled: 1,1,1,1,1
 End: true
 Categories left:
-Yatzy
+Chance
 Twos
 Threes
 Fours
 Fives
 Sixes
-Pair
 TwoPairs
 ThreeOfAKind
 FourOfAKind
 SmallStraight
+LargeStraight
 FullHouse
-Category: ThreeOfAKind
-Player2 has scored 0 more points
-Player2's score: 21
-Player1 has rolled: 3,6,2,4,3
+Category: FourOfAKind
+Player2 has scored 4 more points
+Player2's score: 61
+Player1 has rolled: 1,1,1,1,1
 End: false
 Decisions: r,h,h,h,r
-Player1 has rolled: 1,6,2,4,2
+Player1 has rolled: 1,1,1,1,1
 End: true
 Categories left:
 Chance
@@ -9585,31 +9582,29 @@ SmallStraight
 LargeStraight
 FullHouse
 Category: Fours
-Player1 has scored 4 more points
-Player1's score: 13
-Player2 has rolled: 5,2,1,3,3
+Player1 has scored 0 more points
+Player1's score: 61
+Player2 has rolled: 1,1,1,1,1
 End: false
-Decisions: h,h,r,h,h
-Player2 has rolled: 5,2,2,3,3
-End: false
-Decisions: h,h,r,h,h
-Player2 has rolled: 5,2,3,3,3
+Decisions: r,h,h,h,r
+Player2 has rolled: 1,1,1,1,1
+End: true
 Categories left:
-Yatzy
+Chance
 Twos
 Threes
 Fours
 Fives
 Sixes
-Pair
 TwoPairs
-FourOfAKind
+ThreeOfAKind
 SmallStraight
+LargeStraight
 FullHouse
-Category: Pair
-Player2 has scored 6 more points
-Player2's score: 27
-Player1 has rolled: 2,5,5,2,2
+Category: Fours
+Player2 has scored 0 more points
+Player2's score: 61
+Player1 has rolled: 1,1,1,1,1
 End: true
 Categories left:
 Chance
@@ -9623,31 +9618,31 @@ SmallStraight
 LargeStraight
 FullHouse
 Category: FullHouse
-Player1 has scored 16 more points
-Player1's score: 29
-Player2 has rolled: 4,6,3,1,2
+Player1 has scored 0 more points
+Player1's score: 61
+Player2 has rolled: 1,1,1,1,1
 End: true
 Categories left:
-Yatzy
+Chance
 Twos
 Threes
-Fours
 Fives
 Sixes
 TwoPairs
-FourOfAKind
+ThreeOfAKind
 SmallStraight
+LargeStraight
 FullHouse
-Category: SmallStraight
+Category: FullHouse
 Player2 has scored 0 more points
-Player2's score: 27
-Player1 has rolled: 5,2,4,3,3
+Player2's score: 61
+Player1 has rolled: 1,1,1,1,1
 End: false
 Decisions: h,h,r,r,r
-Player1 has rolled: 5,2,5,2,6
+Player1 has rolled: 1,1,1,1,1
 End: false
 Decisions: r,h,r,r,r
-Player1 has rolled: 4,2,3,6,2
+Player1 has rolled: 1,1,1,1,1
 Categories left:
 Chance
 Twos
@@ -9659,27 +9654,29 @@ ThreeOfAKind
 SmallStraight
 LargeStraight
 Category: Sixes
-Player1 has scored 6 more points
-Player1's score: 35
-Player2 has rolled: 5,1,6,2,1
+Player1 has scored 0 more points
+Player1's score: 61
+Player2 has rolled: 1,1,1,1,1
 End: false
-Decisions: h,r,r,h,r
-Player2 has rolled: 5,2,4,2,2
-End: true
+Decisions: h,h,r,r,r
+Player2 has rolled: 1,1,1,1,1
+End: false
+Decisions: r,h,r,r,r
+Player2 has rolled: 1,1,1,1,1
 Categories left:
-Yatzy
+Chance
 Twos
 Threes
-Fours
 Fives
 Sixes
 TwoPairs
-FourOfAKind
-FullHouse
-Category: Yatzy
+ThreeOfAKind
+SmallStraight
+LargeStraight
+Category: Sixes
 Player2 has scored 0 more points
-Player2's score: 27
-Player1 has rolled: 5,3,3,6,1
+Player2's score: 61
+Player1 has rolled: 1,1,1,1,1
 End: true
 Categories left:
 Chance
@@ -9691,34 +9688,29 @@ ThreeOfAKind
 SmallStraight
 LargeStraight
 Category: Threes
-Player1 has scored 6 more points
-Player1's score: 41
-Player2 has rolled: 6,4,2,5,3
-End: false
-Decisions: r,h,r,r,r
-Player2 has rolled: 6,4,6,3,1
-End: false
-Decisions: r,r,h,r,r
-Player2 has rolled: 2,3,6,2,5
+Player1 has scored 0 more points
+Player1's score: 61
+Player2 has rolled: 1,1,1,1,1
+End: true
 Categories left:
+Chance
 Twos
 Threes
-Fours
 Fives
-Sixes
 TwoPairs
-FourOfAKind
-FullHouse
-Category: Sixes
-Player2 has scored 6 more points
-Player2's score: 33
-Player1 has rolled: 1,4,2,1,3
+ThreeOfAKind
+SmallStraight
+LargeStraight
+Category: Threes
+Player2 has scored 0 more points
+Player2's score: 61
+Player1 has rolled: 1,1,1,1,1
 End: false
 Decisions: r,h,r,r,h
-Player1 has rolled: 4,4,5,5,3
+Player1 has rolled: 1,1,1,1,1
 End: false
 Decisions: h,r,r,r,h
-Player1 has rolled: 4,1,1,2,3
+Player1 has rolled: 1,1,1,1,1
 Categories left:
 Chance
 Twos
@@ -9729,27 +9721,32 @@ SmallStraight
 LargeStraight
 Category: LargeStraight
 Player1 has scored 0 more points
-Player1's score: 41
-Player2 has rolled: 3,6,4,2,4
-End: true
+Player1's score: 61
+Player2 has rolled: 1,1,1,1,1
+End: false
+Decisions: r,h,r,r,h
+Player2 has rolled: 1,1,1,1,1
+End: false
+Decisions: h,r,r,r,h
+Player2 has rolled: 1,1,1,1,1
 Categories left:
+Chance
 Twos
-Threes
-Fours
 Fives
 TwoPairs
-FourOfAKind
-FullHouse
-Category: Threes
-Player2 has scored 3 more points
-Player2's score: 36
-Player1 has rolled: 2,6,4,5,5
+ThreeOfAKind
+SmallStraight
+LargeStraight
+Category: LargeStraight
+Player2 has scored 0 more points
+Player2's score: 61
+Player1 has rolled: 1,1,1,1,1
 End: false
 Decisions: r,h,h,h,r
-Player1 has rolled: 4,6,4,5,5
+Player1 has rolled: 1,1,1,1,1
 End: false
 Decisions: h,h,h,h,h
-Player1 has rolled: 4,6,4,5,5
+Player1 has rolled: 1,1,1,1,1
 Categories left:
 Chance
 Twos
@@ -9759,20 +9756,25 @@ ThreeOfAKind
 SmallStraight
 Category: Twos
 Player1 has scored 0 more points
-Player1's score: 41
-Player2 has rolled: 5,3,6,1,1
-End: true
+Player1's score: 61
+Player2 has rolled: 1,1,1,1,1
+End: false
+Decisions: r,h,h,h,r
+Player2 has rolled: 1,1,1,1,1
+End: false
+Decisions: h,h,h,h,h
+Player2 has rolled: 1,1,1,1,1
 Categories left:
+Chance
 Twos
-Fours
 Fives
 TwoPairs
-FourOfAKind
-FullHouse
-Category: FourOfAKind
+ThreeOfAKind
+SmallStraight
+Category: Twos
 Player2 has scored 0 more points
-Player2's score: 36
-Player1 has rolled: 2,5,4,6,3
+Player2's score: 61
+Player1 has rolled: 1,1,1,1,1
 End: true
 Categories left:
 Chance
@@ -9781,26 +9783,26 @@ TwoPairs
 ThreeOfAKind
 SmallStraight
 Category: ThreeOfAKind
-Player1 has scored 0 more points
-Player1's score: 41
-Player2 has rolled: 2,6,1,5,2
+Player1 has scored 3 more points
+Player1's score: 64
+Player2 has rolled: 1,1,1,1,1
 End: true
 Categories left:
-Twos
-Fours
+Chance
 Fives
 TwoPairs
-FullHouse
-Category: FullHouse
-Player2 has scored 0 more points
-Player2's score: 36
-Player1 has rolled: 2,3,2,1,5
+ThreeOfAKind
+SmallStraight
+Category: ThreeOfAKind
+Player2 has scored 3 more points
+Player2's score: 64
+Player1 has rolled: 1,1,1,1,1
 End: false
 Decisions: h,r,r,h,h
-Player1 has rolled: 2,5,3,1,5
+Player1 has rolled: 1,1,1,1,1
 End: false
 Decisions: r,h,r,h,h
-Player1 has rolled: 1,5,3,1,5
+Player1 has rolled: 1,1,1,1,1
 Categories left:
 Chance
 Fives
@@ -9808,77 +9810,85 @@ TwoPairs
 SmallStraight
 Category: SmallStraight
 Player1 has scored 0 more points
-Player1's score: 41
-Player2 has rolled: 5,3,6,1,3
-End: true
+Player1's score: 64
+Player2 has rolled: 1,1,1,1,1
+End: false
+Decisions: h,r,r,h,h
+Player2 has rolled: 1,1,1,1,1
+End: false
+Decisions: r,h,r,h,h
+Player2 has rolled: 1,1,1,1,1
 Categories left:
-Twos
-Fours
+Chance
 Fives
 TwoPairs
-Category: Fives
-Player2 has scored 5 more points
-Player2's score: 41
-Player1 has rolled: 4,2,4,6,1
+SmallStraight
+Category: SmallStraight
+Player2 has scored 0 more points
+Player2's score: 64
+Player1 has rolled: 1,1,1,1,1
 End: false
 Decisions: r,r,h,r,h
-Player1 has rolled: 5,1,4,5,1
+Player1 has rolled: 1,1,1,1,1
 End: true
 Categories left:
 Chance
 Fives
 TwoPairs
 Category: Chance
-Player1 has scored 16 more points
-Player1's score: 57
-Player2 has rolled: 1,6,5,4,2
+Player1 has scored 5 more points
+Player1's score: 69
+Player2 has rolled: 1,1,1,1,1
 End: false
-Decisions: h,h,r,r,r
-Player2 has rolled: 1,6,6,2,5
+Decisions: r,r,h,r,h
+Player2 has rolled: 1,1,1,1,1
 End: true
 Categories left:
-Twos
-Fours
+Chance
+Fives
 TwoPairs
-Category: Fours
-Player2 has scored 0 more points
-Player2's score: 41
-Player1 has rolled: 1,3,3,1,6
+Category: Chance
+Player2 has scored 5 more points
+Player2's score: 69
+Player1 has rolled: 1,1,1,1,1
 End: true
 Categories left:
 Fives
 TwoPairs
 Category: Fives
 Player1 has scored 0 more points
-Player1's score: 57
-Player2 has rolled: 1,1,5,5,2
+Player1's score: 69
+Player2 has rolled: 1,1,1,1,1
 End: true
 Categories left:
-Twos
+Fives
 TwoPairs
-Category: Twos
-Player2 has scored 2 more points
-Player2's score: 43
-Player1 has rolled: 3,6,4,3,1
+Category: Fives
+Player2 has scored 0 more points
+Player2's score: 69
+Player1 has rolled: 1,1,1,1,1
 End: false
 Decisions: h,r,h,r,h
-Player1 has rolled: 3,3,4,6,1
+Player1 has rolled: 1,1,1,1,1
 End: false
 Decisions: r,h,r,r,h
-Player1 has rolled: 2,3,2,6,1
+Player1 has rolled: 1,1,1,1,1
 Categories left:
 TwoPairs
 Category: TwoPairs
-Player1 has scored 0 more points
-Player1's score: 57
-Player2 has rolled: 2,2,1,2,3
+Player1 has scored 4 more points
+Player1's score: 73
+Player2 has rolled: 1,1,1,1,1
 End: false
-Decisions: h,r,r,h,r
-Player2 has rolled: 2,2,1,2,5
-End: true
+Decisions: h,r,h,r,h
+Player2 has rolled: 1,1,1,1,1
+End: false
+Decisions: r,h,r,r,h
+Player2 has rolled: 1,1,1,1,1
 Categories left:
 TwoPairs
 Category: TwoPairs
-Player2 has scored 0 more points
-Player2's score: 43"
+Player2 has scored 4 more points
+Player2's score: 73
+Drawn between Player1, Player2"
 `;

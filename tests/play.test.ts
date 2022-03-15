@@ -79,11 +79,18 @@ class MockPlayer extends Player {
 }
 
 describe('dummy computer player playing against each other', () => {
-    it.each([1, 2, 3, 4, 5, 6])('Sample game %d', async (seed) => {
+    it.each([
+        [1, false],
+        [2, false],
+        [3, false],
+        [4, false],
+        [5, false],
+        [6, true], // test drawing
+    ])('Sample game %d', async (seed, drawing) => {
         const prando = new Prando(seed);
 
         mockRollDice.mockReset();
-        mockRollDice.mockImplementation(() => ensureDiceResult(prando.nextInt(1, 6)));
+        mockRollDice.mockImplementation(() => ensureDiceResult(drawing ? 1 : prando.nextInt(1, 6)));
 
         await play([
             new MockPlayer(
@@ -92,7 +99,8 @@ describe('dummy computer player playing against each other', () => {
             ),
             new MockPlayer(
                 'Player2',
-                seed + 100, // same seed causes both player to play indentically
+                // same seed causes both player to play indentically
+                seed + (drawing ? 0 : 100),
             ),
         ]);
 
