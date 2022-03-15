@@ -20,7 +20,8 @@ export async function play(players: Player[]): Promise<void> {
 
     // loop until no more categories are left
     while (categoriess.some((categories) => categories.length !== 0)) {
-        for (const i of players.keys()) { // first and second player
+        for (const i of players.keys()) {
+            console.log(`${players[i].getName()}'s turn.`);
             let roll: Roll = [rollDice(), rollDice(), rollDice(), rollDice(), rollDice()];
             players[i].printRoll(roll);
             for (const _t of range(2)) { // first two turn

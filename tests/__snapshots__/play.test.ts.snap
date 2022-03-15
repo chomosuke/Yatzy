@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`dummy computer player playing against each other Sample game 1 1`] = `
-"Player1 has rolled: 4,4,6,2,1
+"Player1's turn.
+Player1 has rolled: 4,4,6,2,1
 End: true
 Categories left:
 Chance
@@ -22,6 +23,7 @@ FullHouse
 Category: Sixes
 Player1 has scored 6 more points
 Player1's score: 6
+Player2's turn.
 Player2 has rolled: 6,3,3,3,4
 End: true
 Categories left:
@@ -43,6 +45,7 @@ FullHouse
 Category: Yatzy
 Player2 has scored 0 more points
 Player2's score: 0
+Player1's turn.
 Player1 has rolled: 6,4,6,4,4
 End: true
 Categories left:
@@ -63,6 +66,7 @@ FullHouse
 Category: Threes
 Player1 has scored 0 more points
 Player1's score: 6
+Player2's turn.
 Player2 has rolled: 5,3,3,6,6
 End: true
 Categories left:
@@ -83,6 +87,7 @@ FullHouse
 Category: ThreeOfAKind
 Player2 has scored 0 more points
 Player2's score: 0
+Player1's turn.
 Player1 has rolled: 6,5,2,6,3
 End: false
 Decisions: r,h,h,h,r
@@ -105,6 +110,7 @@ FullHouse
 Category: TwoPairs
 Player1 has scored 0 more points
 Player1's score: 6
+Player2's turn.
 Player2 has rolled: 2,5,5,4,5
 End: true
 Categories left:
@@ -124,6 +130,7 @@ FullHouse
 Category: Fours
 Player2 has scored 4 more points
 Player2's score: 4
+Player1's turn.
 Player1 has rolled: 1,4,1,4,4
 End: true
 Categories left:
@@ -142,6 +149,7 @@ FullHouse
 Category: ThreeOfAKind
 Player1 has scored 12 more points
 Player1's score: 18
+Player2's turn.
 Player2 has rolled: 6,2,4,5,3
 End: false
 Decisions: h,h,h,r,h
@@ -163,6 +171,7 @@ FullHouse
 Category: Chance
 Player2 has scored 18 more points
 Player2's score: 22
+Player1's turn.
 Player1 has rolled: 5,1,1,3,2
 End: true
 Categories left:
@@ -180,6 +189,7 @@ FullHouse
 Category: SmallStraight
 Player1 has scored 0 more points
 Player1's score: 18
+Player2's turn.
 Player2 has rolled: 1,5,6,5,5
 End: false
 Decisions: h,r,r,r,h
@@ -202,6 +212,7 @@ FullHouse
 Category: Sixes
 Player2 has scored 0 more points
 Player2's score: 22
+Player1's turn.
 Player1 has rolled: 5,2,2,4,6
 End: false
 Decisions: h,r,r,r,r
@@ -223,6 +234,7 @@ FullHouse
 Category: LargeStraight
 Player1 has scored 0 more points
 Player1's score: 18
+Player2's turn.
 Player2 has rolled: 6,1,6,2,3
 End: true
 Categories left:
@@ -239,6 +251,7 @@ FullHouse
 Category: Ones
 Player2 has scored 1 more points
 Player2's score: 23
+Player1's turn.
 Player1 has rolled: 6,3,5,1,4
 End: true
 Categories left:
@@ -254,6 +267,7 @@ FullHouse
 Category: Fives
 Player1 has scored 5 more points
 Player1's score: 23
+Player2's turn.
 Player2 has rolled: 6,6,4,1,1
 End: true
 Categories left:
@@ -269,6 +283,7 @@ FullHouse
 Category: Twos
 Player2 has scored 0 more points
 Player2's score: 23
+Player1's turn.
 Player1 has rolled: 4,5,4,1,2
 End: true
 Categories left:
@@ -283,6 +298,7 @@ FullHouse
 Category: Chance
 Player1 has scored 16 more points
 Player1's score: 39
+Player2's turn.
 Player2 has rolled: 6,1,6,2,5
 End: false
 Decisions: h,h,r,h,r
@@ -302,6 +318,7 @@ FullHouse
 Category: Fives
 Player2 has scored 0 more points
 Player2's score: 23
+Player1's turn.
 Player1 has rolled: 1,3,3,3,2
 End: true
 Categories left:
@@ -315,6 +332,7 @@ FullHouse
 Category: Yatzy
 Player1 has scored 0 more points
 Player1's score: 39
+Player2's turn.
 Player2 has rolled: 1,4,5,6,1
 End: false
 Decisions: r,h,h,h,r
@@ -333,6 +351,7 @@ FullHouse
 Category: Pair
 Player2 has scored 12 more points
 Player2's score: 35
+Player1's turn.
 Player1 has rolled: 1,6,4,6,4
 End: true
 Categories left:
@@ -345,6 +364,7 @@ FullHouse
 Category: Pair
 Player1 has scored 12 more points
 Player1's score: 51
+Player2's turn.
 Player2 has rolled: 5,1,6,4,2
 End: false
 Decisions: h,r,h,r,r
@@ -360,6 +380,7 @@ FullHouse
 Category: Threes
 Player2 has scored 3 more points
 Player2's score: 38
+Player1's turn.
 Player1 has rolled: 2,3,6,3,1
 End: true
 Categories left:
@@ -371,6 +392,7 @@ FullHouse
 Category: Twos
 Player1 has scored 2 more points
 Player1's score: 53
+Player2's turn.
 Player2 has rolled: 3,2,4,4,1
 End: true
 Categories left:
@@ -382,6 +404,7 @@ FullHouse
 Category: LargeStraight
 Player2 has scored 0 more points
 Player2's score: 38
+Player1's turn.
 Player1 has rolled: 3,4,6,2,2
 End: true
 Categories left:
@@ -392,6 +415,7 @@ FullHouse
 Category: FullHouse
 Player1 has scored 0 more points
 Player1's score: 53
+Player2's turn.
 Player2 has rolled: 5,2,1,5,1
 End: true
 Categories left:
@@ -402,6 +426,7 @@ FullHouse
 Category: FullHouse
 Player2 has scored 0 more points
 Player2's score: 38
+Player1's turn.
 Player1 has rolled: 2,6,5,5,5
 End: false
 Decisions: h,r,h,h,h
@@ -416,6 +441,7 @@ FourOfAKind
 Category: Ones
 Player1 has scored 0 more points
 Player1's score: 53
+Player2's turn.
 Player2 has rolled: 3,5,1,6,6
 End: false
 Decisions: r,r,r,h,h
@@ -430,6 +456,7 @@ SmallStraight
 Category: FourOfAKind
 Player2 has scored 0 more points
 Player2's score: 38
+Player1's turn.
 Player1 has rolled: 6,4,1,6,4
 End: false
 Decisions: h,h,r,h,r
@@ -443,6 +470,7 @@ FourOfAKind
 Category: Fours
 Player1 has scored 4 more points
 Player1's score: 57
+Player2's turn.
 Player2 has rolled: 1,3,2,5,5
 End: true
 Categories left:
@@ -451,6 +479,7 @@ SmallStraight
 Category: SmallStraight
 Player2 has scored 0 more points
 Player2's score: 38
+Player1's turn.
 Player1 has rolled: 2,4,2,2,6
 End: false
 Decisions: h,r,h,r,h
@@ -461,6 +490,7 @@ FourOfAKind
 Category: FourOfAKind
 Player1 has scored 0 more points
 Player1's score: 57
+Player2's turn.
 Player2 has rolled: 3,3,1,3,1
 End: false
 Decisions: h,r,h,h,r
@@ -475,7 +505,8 @@ Player1 wins with a score of 57!"
 `;
 
 exports[`dummy computer player playing against each other Sample game 2 1`] = `
-"Player1 has rolled: 4,4,4,6,3
+"Player1's turn.
+Player1 has rolled: 4,4,4,6,3
 End: true
 Categories left:
 Chance
@@ -496,6 +527,7 @@ FullHouse
 Category: Sixes
 Player1 has scored 6 more points
 Player1's score: 6
+Player2's turn.
 Player2 has rolled: 5,4,1,6,4
 End: true
 Categories left:
@@ -517,6 +549,7 @@ FullHouse
 Category: Yatzy
 Player2 has scored 0 more points
 Player2's score: 0
+Player1's turn.
 Player1 has rolled: 2,5,6,2,5
 End: true
 Categories left:
@@ -537,6 +570,7 @@ FullHouse
 Category: LargeStraight
 Player1 has scored 0 more points
 Player1's score: 6
+Player2's turn.
 Player2 has rolled: 2,3,3,5,4
 End: true
 Categories left:
@@ -557,6 +591,7 @@ FullHouse
 Category: Ones
 Player2 has scored 0 more points
 Player2's score: 0
+Player1's turn.
 Player1 has rolled: 4,2,5,2,5
 End: false
 Decisions: r,r,h,r,r
@@ -581,6 +616,7 @@ FullHouse
 Category: Threes
 Player1 has scored 3 more points
 Player1's score: 9
+Player2's turn.
 Player2 has rolled: 5,5,1,4,5
 End: true
 Categories left:
@@ -600,6 +636,7 @@ FullHouse
 Category: Twos
 Player2 has scored 0 more points
 Player2's score: 0
+Player1's turn.
 Player1 has rolled: 3,6,6,3,5
 End: false
 Decisions: r,r,r,h,r
@@ -623,6 +660,7 @@ FullHouse
 Category: ThreeOfAKind
 Player1 has scored 0 more points
 Player1's score: 9
+Player2's turn.
 Player2 has rolled: 4,6,4,3,6
 End: true
 Categories left:
@@ -641,6 +679,7 @@ FullHouse
 Category: Fives
 Player2 has scored 0 more points
 Player2's score: 0
+Player1's turn.
 Player1 has rolled: 3,4,3,4,1
 End: true
 Categories left:
@@ -658,6 +697,7 @@ FullHouse
 Category: FourOfAKind
 Player1 has scored 0 more points
 Player1's score: 9
+Player2's turn.
 Player2 has rolled: 5,4,5,2,1
 End: true
 Categories left:
@@ -675,6 +715,7 @@ FullHouse
 Category: Chance
 Player2 has scored 17 more points
 Player2's score: 17
+Player1's turn.
 Player1 has rolled: 4,4,5,5,3
 End: true
 Categories left:
@@ -691,6 +732,7 @@ FullHouse
 Category: SmallStraight
 Player1 has scored 0 more points
 Player1's score: 9
+Player2's turn.
 Player2 has rolled: 5,6,6,1,6
 End: false
 Decisions: h,r,r,h,r
@@ -710,6 +752,7 @@ FullHouse
 Category: FullHouse
 Player2 has scored 0 more points
 Player2's score: 17
+Player1's turn.
 Player1 has rolled: 2,5,3,3,4
 End: false
 Decisions: r,r,h,r,r
@@ -730,6 +773,7 @@ FullHouse
 Category: Chance
 Player1 has scored 17 more points
 Player1's score: 26
+Player2's turn.
 Player2 has rolled: 1,6,3,6,1
 End: true
 Categories left:
@@ -745,6 +789,7 @@ LargeStraight
 Category: TwoPairs
 Player2 has scored 14 more points
 Player2's score: 31
+Player1's turn.
 Player1 has rolled: 3,4,5,3,6
 End: true
 Categories left:
@@ -759,6 +804,7 @@ FullHouse
 Category: FullHouse
 Player1 has scored 0 more points
 Player1's score: 26
+Player2's turn.
 Player2 has rolled: 5,1,6,1,4
 End: false
 Decisions: h,r,h,h,r
@@ -776,6 +822,7 @@ LargeStraight
 Category: ThreeOfAKind
 Player2 has scored 0 more points
 Player2's score: 31
+Player1's turn.
 Player1 has rolled: 4,2,2,4,4
 End: true
 Categories left:
@@ -789,6 +836,7 @@ TwoPairs
 Category: Twos
 Player1 has scored 4 more points
 Player1's score: 30
+Player2's turn.
 Player2 has rolled: 6,3,1,2,3
 End: true
 Categories left:
@@ -802,6 +850,7 @@ LargeStraight
 Category: FourOfAKind
 Player2 has scored 0 more points
 Player2's score: 31
+Player1's turn.
 Player1 has rolled: 3,4,6,3,2
 End: true
 Categories left:
@@ -814,6 +863,7 @@ TwoPairs
 Category: Fours
 Player1 has scored 4 more points
 Player1's score: 34
+Player2's turn.
 Player2 has rolled: 2,3,1,5,5
 End: false
 Decisions: h,r,h,r,h
@@ -829,6 +879,7 @@ LargeStraight
 Category: LargeStraight
 Player2 has scored 0 more points
 Player2's score: 31
+Player1's turn.
 Player1 has rolled: 5,6,5,1,4
 End: true
 Categories left:
@@ -840,6 +891,7 @@ TwoPairs
 Category: Fives
 Player1 has scored 10 more points
 Player1's score: 44
+Player2's turn.
 Player2 has rolled: 2,6,2,2,5
 End: false
 Decisions: h,r,r,h,r
@@ -854,6 +906,7 @@ SmallStraight
 Category: SmallStraight
 Player2 has scored 0 more points
 Player2's score: 31
+Player1's turn.
 Player1 has rolled: 5,6,4,2,5
 End: true
 Categories left:
@@ -864,6 +917,7 @@ TwoPairs
 Category: Yatzy
 Player1 has scored 0 more points
 Player1's score: 44
+Player2's turn.
 Player2 has rolled: 2,1,3,6,4
 End: false
 Decisions: r,r,r,r,r
@@ -879,6 +933,7 @@ Pair
 Category: Sixes
 Player2 has scored 18 more points
 Player2's score: 49
+Player1's turn.
 Player1 has rolled: 3,3,5,2,6
 End: true
 Categories left:
@@ -888,6 +943,7 @@ TwoPairs
 Category: Pair
 Player1 has scored 6 more points
 Player1's score: 50
+Player2's turn.
 Player2 has rolled: 3,3,1,6,4
 End: true
 Categories left:
@@ -897,6 +953,7 @@ Pair
 Category: Fours
 Player2 has scored 4 more points
 Player2's score: 53
+Player1's turn.
 Player1 has rolled: 3,6,6,5,1
 End: true
 Categories left:
@@ -905,6 +962,7 @@ TwoPairs
 Category: Ones
 Player1 has scored 1 more points
 Player1's score: 51
+Player2's turn.
 Player2 has rolled: 5,2,6,3,2
 End: true
 Categories left:
@@ -913,6 +971,7 @@ Pair
 Category: Pair
 Player2 has scored 4 more points
 Player2's score: 57
+Player1's turn.
 Player1 has rolled: 6,4,6,2,6
 End: false
 Decisions: r,r,r,r,h
@@ -923,6 +982,7 @@ TwoPairs
 Category: TwoPairs
 Player1 has scored 20 more points
 Player1's score: 71
+Player2's turn.
 Player2 has rolled: 1,5,3,2,3
 End: true
 Categories left:
@@ -934,7 +994,8 @@ Player1 wins with a score of 71!"
 `;
 
 exports[`dummy computer player playing against each other Sample game 3 1`] = `
-"Player1 has rolled: 4,4,5,2,5
+"Player1's turn.
+Player1 has rolled: 4,4,5,2,5
 End: true
 Categories left:
 Chance
@@ -955,6 +1016,7 @@ FullHouse
 Category: Pair
 Player1 has scored 10 more points
 Player1's score: 10
+Player2's turn.
 Player2 has rolled: 5,2,5,1,4
 End: true
 Categories left:
@@ -976,6 +1038,7 @@ FullHouse
 Category: Yatzy
 Player2 has scored 0 more points
 Player2's score: 0
+Player1's turn.
 Player1 has rolled: 2,5,4,3,4
 End: true
 Categories left:
@@ -996,6 +1059,7 @@ FullHouse
 Category: Ones
 Player1 has scored 0 more points
 Player1's score: 10
+Player2's turn.
 Player2 has rolled: 1,4,4,6,6
 End: true
 Categories left:
@@ -1016,6 +1080,7 @@ FullHouse
 Category: SmallStraight
 Player2 has scored 0 more points
 Player2's score: 0
+Player1's turn.
 Player1 has rolled: 6,1,1,3,1
 End: true
 Categories left:
@@ -1035,6 +1100,7 @@ FullHouse
 Category: FourOfAKind
 Player1 has scored 0 more points
 Player1's score: 10
+Player2's turn.
 Player2 has rolled: 1,2,5,1,6
 End: false
 Decisions: h,h,r,h,h
@@ -1059,6 +1125,7 @@ FullHouse
 Category: Chance
 Player2 has scored 14 more points
 Player2's score: 14
+Player1's turn.
 Player1 has rolled: 4,4,5,1,1
 End: false
 Decisions: r,h,r,h,r
@@ -1080,6 +1147,7 @@ FullHouse
 Category: Fives
 Player1 has scored 0 more points
 Player1's score: 10
+Player2's turn.
 Player2 has rolled: 3,2,1,4,6
 End: false
 Decisions: r,h,h,h,h
@@ -1103,6 +1171,7 @@ FullHouse
 Category: FullHouse
 Player2 has scored 0 more points
 Player2's score: 14
+Player1's turn.
 Player1 has rolled: 2,3,4,3,4
 End: true
 Categories left:
@@ -1120,6 +1189,7 @@ FullHouse
 Category: Chance
 Player1 has scored 16 more points
 Player1's score: 26
+Player2's turn.
 Player2 has rolled: 4,2,4,6,4
 End: false
 Decisions: h,h,h,h,h
@@ -1140,6 +1210,7 @@ LargeStraight
 Category: Sixes
 Player2 has scored 6 more points
 Player2's score: 20
+Player1's turn.
 Player1 has rolled: 4,6,3,5,6
 End: true
 Categories left:
@@ -1156,6 +1227,7 @@ FullHouse
 Category: TwoPairs
 Player1 has scored 0 more points
 Player1's score: 26
+Player2's turn.
 Player2 has rolled: 3,3,4,4,4
 End: true
 Categories left:
@@ -1172,6 +1244,7 @@ LargeStraight
 Category: Fives
 Player2 has scored 0 more points
 Player2's score: 20
+Player1's turn.
 Player1 has rolled: 6,2,1,6,4
 End: true
 Categories left:
@@ -1187,6 +1260,7 @@ FullHouse
 Category: FullHouse
 Player1 has scored 0 more points
 Player1's score: 26
+Player2's turn.
 Player2 has rolled: 5,2,1,6,2
 End: true
 Categories left:
@@ -1202,6 +1276,7 @@ LargeStraight
 Category: Ones
 Player2 has scored 1 more points
 Player2's score: 21
+Player1's turn.
 Player1 has rolled: 1,4,5,2,3
 End: true
 Categories left:
@@ -1216,6 +1291,7 @@ LargeStraight
 Category: Yatzy
 Player1 has scored 0 more points
 Player1's score: 26
+Player2's turn.
 Player2 has rolled: 1,5,6,3,3
 End: true
 Categories left:
@@ -1230,6 +1306,7 @@ LargeStraight
 Category: ThreeOfAKind
 Player2 has scored 0 more points
 Player2's score: 21
+Player1's turn.
 Player1 has rolled: 6,6,3,3,1
 End: false
 Decisions: h,h,h,h,r
@@ -1248,6 +1325,7 @@ LargeStraight
 Category: Sixes
 Player1 has scored 0 more points
 Player1's score: 26
+Player2's turn.
 Player2 has rolled: 4,1,1,4,2
 End: false
 Decisions: h,r,h,h,r
@@ -1264,6 +1342,7 @@ LargeStraight
 Category: FourOfAKind
 Player2 has scored 0 more points
 Player2's score: 21
+Player1's turn.
 Player1 has rolled: 2,5,4,1,5
 End: true
 Categories left:
@@ -1276,6 +1355,7 @@ LargeStraight
 Category: SmallStraight
 Player1 has scored 0 more points
 Player1's score: 26
+Player2's turn.
 Player2 has rolled: 1,2,4,2,1
 End: false
 Decisions: r,r,h,r,h
@@ -1293,6 +1373,7 @@ LargeStraight
 Category: Twos
 Player2 has scored 2 more points
 Player2's score: 23
+Player1's turn.
 Player1 has rolled: 2,6,1,6,6
 End: false
 Decisions: h,r,h,h,h
@@ -1309,6 +1390,7 @@ LargeStraight
 Category: ThreeOfAKind
 Player1 has scored 0 more points
 Player1's score: 26
+Player2's turn.
 Player2 has rolled: 4,5,1,6,2
 End: true
 Categories left:
@@ -1320,6 +1402,7 @@ LargeStraight
 Category: Fours
 Player2 has scored 4 more points
 Player2's score: 27
+Player1's turn.
 Player1 has rolled: 4,5,1,4,4
 End: false
 Decisions: r,h,h,r,h
@@ -1333,6 +1416,7 @@ LargeStraight
 Category: Fours
 Player1 has scored 4 more points
 Player1's score: 30
+Player2's turn.
 Player2 has rolled: 1,3,2,4,1
 End: true
 Categories left:
@@ -1343,6 +1427,7 @@ LargeStraight
 Category: TwoPairs
 Player2 has scored 0 more points
 Player2's score: 27
+Player1's turn.
 Player1 has rolled: 4,5,6,4,2
 End: false
 Decisions: r,r,r,r,r
@@ -1357,6 +1442,7 @@ LargeStraight
 Category: Threes
 Player1 has scored 3 more points
 Player1's score: 33
+Player2's turn.
 Player2 has rolled: 2,6,3,2,2
 End: false
 Decisions: h,r,h,r,h
@@ -1369,6 +1455,7 @@ LargeStraight
 Category: Pair
 Player2 has scored 4 more points
 Player2's score: 31
+Player1's turn.
 Player1 has rolled: 5,4,2,2,6
 End: true
 Categories left:
@@ -1377,6 +1464,7 @@ LargeStraight
 Category: LargeStraight
 Player1 has scored 0 more points
 Player1's score: 33
+Player2's turn.
 Player2 has rolled: 2,5,2,3,3
 End: false
 Decisions: h,r,h,r,h
@@ -1388,6 +1476,7 @@ LargeStraight
 Category: LargeStraight
 Player2 has scored 0 more points
 Player2's score: 31
+Player1's turn.
 Player1 has rolled: 4,4,6,5,4
 End: false
 Decisions: h,r,r,r,h
@@ -1400,6 +1489,7 @@ Twos
 Category: Twos
 Player1 has scored 0 more points
 Player1's score: 33
+Player2's turn.
 Player2 has rolled: 4,3,1,5,6
 End: false
 Decisions: h,r,h,h,r
@@ -1414,7 +1504,8 @@ Player1 wins with a score of 33!"
 `;
 
 exports[`dummy computer player playing against each other Sample game 4 1`] = `
-"Player1 has rolled: 4,4,5,2,2
+"Player1's turn.
+Player1 has rolled: 4,4,5,2,2
 End: true
 Categories left:
 Chance
@@ -1435,6 +1526,7 @@ FullHouse
 Category: Pair
 Player1 has scored 8 more points
 Player1's score: 8
+Player2's turn.
 Player2 has rolled: 1,3,1,4,2
 End: true
 Categories left:
@@ -1456,6 +1548,7 @@ FullHouse
 Category: Ones
 Player2 has scored 2 more points
 Player2's score: 2
+Player1's turn.
 Player1 has rolled: 5,4,6,3,3
 End: true
 Categories left:
@@ -1476,6 +1569,7 @@ FullHouse
 Category: Twos
 Player1 has scored 0 more points
 Player1's score: 8
+Player2's turn.
 Player2 has rolled: 3,4,6,1,4
 End: false
 Decisions: h,h,r,h,h
@@ -1499,6 +1593,7 @@ FullHouse
 Category: LargeStraight
 Player2 has scored 0 more points
 Player2's score: 2
+Player1's turn.
 Player1 has rolled: 6,4,3,2,5
 End: false
 Decisions: h,h,h,r,h
@@ -1521,6 +1616,7 @@ FullHouse
 Category: ThreeOfAKind
 Player1 has scored 0 more points
 Player1's score: 8
+Player2's turn.
 Player2 has rolled: 3,1,5,1,6
 End: true
 Categories left:
@@ -1540,6 +1636,7 @@ FullHouse
 Category: ThreeOfAKind
 Player2 has scored 0 more points
 Player2's score: 2
+Player1's turn.
 Player1 has rolled: 2,4,1,4,1
 End: true
 Categories left:
@@ -1558,6 +1655,7 @@ FullHouse
 Category: Fives
 Player1 has scored 0 more points
 Player1's score: 8
+Player2's turn.
 Player2 has rolled: 2,1,1,2,1
 End: true
 Categories left:
@@ -1576,6 +1674,7 @@ FullHouse
 Category: Fives
 Player2 has scored 0 more points
 Player2's score: 2
+Player1's turn.
 Player1 has rolled: 4,2,2,6,5
 End: false
 Decisions: h,r,r,h,r
@@ -1596,6 +1695,7 @@ FullHouse
 Category: FullHouse
 Player1 has scored 0 more points
 Player1's score: 8
+Player2's turn.
 Player2 has rolled: 5,5,6,4,4
 End: false
 Decisions: h,h,r,r,r
@@ -1618,6 +1718,7 @@ FullHouse
 Category: SmallStraight
 Player2 has scored 0 more points
 Player2's score: 2
+Player1's turn.
 Player1 has rolled: 4,6,2,3,3
 End: true
 Categories left:
@@ -1634,6 +1735,7 @@ LargeStraight
 Category: Threes
 Player1 has scored 6 more points
 Player1's score: 14
+Player2's turn.
 Player2 has rolled: 6,2,3,2,6
 End: true
 Categories left:
@@ -1650,6 +1752,7 @@ FullHouse
 Category: Sixes
 Player2 has scored 12 more points
 Player2's score: 14
+Player1's turn.
 Player1 has rolled: 2,1,6,4,6
 End: false
 Decisions: r,r,h,h,r
@@ -1670,6 +1773,7 @@ LargeStraight
 Category: Yatzy
 Player1 has scored 0 more points
 Player1's score: 14
+Player2's turn.
 Player2 has rolled: 2,2,3,2,2
 End: true
 Categories left:
@@ -1685,6 +1789,7 @@ FullHouse
 Category: Twos
 Player2 has scored 8 more points
 Player2's score: 22
+Player1's turn.
 Player1 has rolled: 2,4,5,5,3
 End: false
 Decisions: h,h,h,h,r
@@ -1704,6 +1809,7 @@ LargeStraight
 Category: FourOfAKind
 Player1 has scored 0 more points
 Player1's score: 14
+Player2's turn.
 Player2 has rolled: 1,5,4,4,1
 End: false
 Decisions: r,r,h,h,h
@@ -1723,6 +1829,7 @@ FullHouse
 Category: Pair
 Player2 has scored 2 more points
 Player2's score: 24
+Player1's turn.
 Player1 has rolled: 2,4,1,2,1
 End: true
 Categories left:
@@ -1736,6 +1843,7 @@ LargeStraight
 Category: SmallStraight
 Player1 has scored 0 more points
 Player1's score: 14
+Player2's turn.
 Player2 has rolled: 5,3,5,3,5
 End: true
 Categories left:
@@ -1749,6 +1857,7 @@ FullHouse
 Category: FourOfAKind
 Player2 has scored 0 more points
 Player2's score: 24
+Player1's turn.
 Player1 has rolled: 2,1,2,1,3
 End: true
 Categories left:
@@ -1761,6 +1870,7 @@ LargeStraight
 Category: Sixes
 Player1 has scored 0 more points
 Player1's score: 14
+Player2's turn.
 Player2 has rolled: 5,4,3,2,2
 End: false
 Decisions: r,r,h,h,r
@@ -1776,6 +1886,7 @@ FullHouse
 Category: Fours
 Player2 has scored 0 more points
 Player2's score: 24
+Player1's turn.
 Player1 has rolled: 3,3,4,3,5
 End: true
 Categories left:
@@ -1787,6 +1898,7 @@ LargeStraight
 Category: Chance
 Player1 has scored 18 more points
 Player1's score: 32
+Player2's turn.
 Player2 has rolled: 1,1,4,5,1
 End: false
 Decisions: r,h,h,r,r
@@ -1803,6 +1915,7 @@ FullHouse
 Category: TwoPairs
 Player2 has scored 0 more points
 Player2's score: 24
+Player1's turn.
 Player1 has rolled: 6,5,5,1,3
 End: true
 Categories left:
@@ -1813,6 +1926,7 @@ LargeStraight
 Category: TwoPairs
 Player1 has scored 0 more points
 Player1's score: 32
+Player2's turn.
 Player2 has rolled: 5,2,5,3,2
 End: true
 Categories left:
@@ -1823,6 +1937,7 @@ FullHouse
 Category: Threes
 Player2 has scored 3 more points
 Player2's score: 27
+Player1's turn.
 Player1 has rolled: 4,5,2,4,2
 End: false
 Decisions: h,r,r,h,h
@@ -1837,6 +1952,7 @@ LargeStraight
 Category: Ones
 Player1 has scored 1 more points
 Player1's score: 33
+Player2's turn.
 Player2 has rolled: 5,1,4,6,6
 End: true
 Categories left:
@@ -1846,6 +1962,7 @@ FullHouse
 Category: Chance
 Player2 has scored 22 more points
 Player2's score: 49
+Player1's turn.
 Player1 has rolled: 4,1,1,2,1
 End: false
 Decisions: r,r,r,r,r
@@ -1857,6 +1974,7 @@ LargeStraight
 Category: LargeStraight
 Player1 has scored 0 more points
 Player1's score: 33
+Player2's turn.
 Player2 has rolled: 5,4,6,1,5
 End: false
 Decisions: h,r,h,r,r
@@ -1870,6 +1988,7 @@ FullHouse
 Category: FullHouse
 Player2 has scored 0 more points
 Player2's score: 49
+Player1's turn.
 Player1 has rolled: 3,2,6,2,3
 End: true
 Categories left:
@@ -1877,6 +1996,7 @@ Fours
 Category: Fours
 Player1 has scored 0 more points
 Player1's score: 33
+Player2's turn.
 Player2 has rolled: 5,1,3,5,4
 End: false
 Decisions: r,h,h,h,r
@@ -1893,7 +2013,8 @@ Player2 wins with a score of 49!"
 `;
 
 exports[`dummy computer player playing against each other Sample game 5 1`] = `
-"Player1 has rolled: 4,4,5,4,6
+"Player1's turn.
+Player1 has rolled: 4,4,5,4,6
 End: true
 Categories left:
 Chance
@@ -1914,6 +2035,7 @@ FullHouse
 Category: Pair
 Player1 has scored 8 more points
 Player1's score: 8
+Player2's turn.
 Player2 has rolled: 3,5,5,3,1
 End: true
 Categories left:
@@ -1935,6 +2057,7 @@ FullHouse
 Category: Ones
 Player2 has scored 1 more points
 Player2's score: 1
+Player1's turn.
 Player1 has rolled: 5,5,4,2,3
 End: true
 Categories left:
@@ -1955,6 +2078,7 @@ FullHouse
 Category: TwoPairs
 Player1 has scored 0 more points
 Player1's score: 8
+Player2's turn.
 Player2 has rolled: 2,2,1,3,6
 End: false
 Decisions: r,r,r,r,r
@@ -1980,6 +2104,7 @@ FullHouse
 Category: Twos
 Player2 has scored 2 more points
 Player2's score: 3
+Player1's turn.
 Player1 has rolled: 4,1,4,5,4
 End: true
 Categories left:
@@ -1999,6 +2124,7 @@ FullHouse
 Category: Fours
 Player1 has scored 12 more points
 Player1's score: 20
+Player2's turn.
 Player2 has rolled: 4,4,2,2,5
 End: false
 Decisions: r,h,r,r,h
@@ -2021,6 +2147,7 @@ FullHouse
 Category: TwoPairs
 Player2 has scored 0 more points
 Player2's score: 3
+Player1's turn.
 Player1 has rolled: 2,3,5,3,3
 End: true
 Categories left:
@@ -2039,6 +2166,7 @@ FullHouse
 Category: SmallStraight
 Player1 has scored 0 more points
 Player1's score: 20
+Player2's turn.
 Player2 has rolled: 3,3,4,6,4
 End: false
 Decisions: r,r,r,h,r
@@ -2060,6 +2188,7 @@ FullHouse
 Category: Yatzy
 Player2 has scored 0 more points
 Player2's score: 3
+Player1's turn.
 Player1 has rolled: 3,5,6,1,2
 End: false
 Decisions: h,r,r,r,h
@@ -2082,6 +2211,7 @@ FullHouse
 Category: Sixes
 Player1 has scored 0 more points
 Player1's score: 20
+Player2's turn.
 Player2 has rolled: 4,6,5,4,5
 End: false
 Decisions: h,r,r,h,h
@@ -2104,6 +2234,7 @@ FullHouse
 Category: LargeStraight
 Player2 has scored 0 more points
 Player2's score: 3
+Player1's turn.
 Player1 has rolled: 6,1,1,4,2
 End: true
 Categories left:
@@ -2120,6 +2251,7 @@ FullHouse
 Category: Twos
 Player1 has scored 2 more points
 Player1's score: 22
+Player2's turn.
 Player2 has rolled: 5,2,3,3,1
 End: false
 Decisions: h,r,h,h,h
@@ -2141,6 +2273,7 @@ FullHouse
 Category: SmallStraight
 Player2 has scored 0 more points
 Player2's score: 3
+Player1's turn.
 Player1 has rolled: 5,5,3,5,5
 End: false
 Decisions: r,r,r,r,h
@@ -2159,6 +2292,7 @@ FullHouse
 Category: Chance
 Player1 has scored 20 more points
 Player1's score: 42
+Player2's turn.
 Player2 has rolled: 6,4,4,3,5
 End: false
 Decisions: h,r,r,r,r
@@ -2177,6 +2311,7 @@ FullHouse
 Category: Pair
 Player2 has scored 10 more points
 Player2's score: 13
+Player1's turn.
 Player1 has rolled: 6,5,2,1,5
 End: true
 Categories left:
@@ -2191,6 +2326,7 @@ FullHouse
 Category: LargeStraight
 Player1 has scored 0 more points
 Player1's score: 42
+Player2's turn.
 Player2 has rolled: 1,5,4,5,5
 End: false
 Decisions: h,h,h,r,r
@@ -2210,6 +2346,7 @@ FullHouse
 Category: FullHouse
 Player2 has scored 0 more points
 Player2's score: 13
+Player1's turn.
 Player1 has rolled: 1,1,3,6,1
 End: true
 Categories left:
@@ -2223,6 +2360,7 @@ FullHouse
 Category: Fives
 Player1 has scored 0 more points
 Player1's score: 42
+Player2's turn.
 Player2 has rolled: 4,5,6,4,6
 End: true
 Categories left:
@@ -2236,6 +2374,7 @@ FourOfAKind
 Category: Fours
 Player2 has scored 8 more points
 Player2's score: 21
+Player1's turn.
 Player1 has rolled: 4,2,5,6,4
 End: true
 Categories left:
@@ -2248,6 +2387,7 @@ FullHouse
 Category: Ones
 Player1 has scored 0 more points
 Player1's score: 42
+Player2's turn.
 Player2 has rolled: 6,4,5,2,1
 End: true
 Categories left:
@@ -2260,6 +2400,7 @@ FourOfAKind
 Category: FourOfAKind
 Player2 has scored 0 more points
 Player2's score: 21
+Player1's turn.
 Player1 has rolled: 2,4,6,1,1
 End: false
 Decisions: r,h,h,r,h
@@ -2276,6 +2417,7 @@ FullHouse
 Category: ThreeOfAKind
 Player1 has scored 0 more points
 Player1's score: 42
+Player2's turn.
 Player2 has rolled: 2,4,3,3,3
 End: false
 Decisions: r,r,h,h,h
@@ -2292,6 +2434,7 @@ ThreeOfAKind
 Category: Fives
 Player2 has scored 5 more points
 Player2's score: 26
+Player1's turn.
 Player1 has rolled: 1,4,1,2,5
 End: true
 Categories left:
@@ -2302,6 +2445,7 @@ FullHouse
 Category: FourOfAKind
 Player1 has scored 0 more points
 Player1's score: 42
+Player2's turn.
 Player2 has rolled: 6,3,3,3,3
 End: true
 Categories left:
@@ -2312,6 +2456,7 @@ ThreeOfAKind
 Category: Sixes
 Player2 has scored 6 more points
 Player2's score: 32
+Player1's turn.
 Player1 has rolled: 5,3,2,4,1
 End: true
 Categories left:
@@ -2321,6 +2466,7 @@ FullHouse
 Category: Threes
 Player1 has scored 3 more points
 Player1's score: 45
+Player2's turn.
 Player2 has rolled: 2,3,6,4,5
 End: false
 Decisions: h,h,h,h,h
@@ -2333,6 +2479,7 @@ ThreeOfAKind
 Category: Chance
 Player2 has scored 20 more points
 Player2's score: 52
+Player1's turn.
 Player1 has rolled: 4,3,6,1,1
 End: false
 Decisions: r,h,r,r,h
@@ -2346,6 +2493,7 @@ FullHouse
 Category: FullHouse
 Player1 has scored 0 more points
 Player1's score: 45
+Player2's turn.
 Player2 has rolled: 3,1,4,1,5
 End: false
 Decisions: r,h,h,r,r
@@ -2357,6 +2505,7 @@ ThreeOfAKind
 Category: Threes
 Player2 has scored 0 more points
 Player2's score: 52
+Player1's turn.
 Player1 has rolled: 2,3,2,2,2
 End: true
 Categories left:
@@ -2364,6 +2513,7 @@ Yatzy
 Category: Yatzy
 Player1 has scored 0 more points
 Player1's score: 45
+Player2's turn.
 Player2 has rolled: 6,2,3,3,6
 End: false
 Decisions: h,h,r,h,h
@@ -2378,7 +2528,8 @@ Player2 wins with a score of 52!"
 `;
 
 exports[`dummy computer player playing against each other Sample game 6 1`] = `
-"Player1 has rolled: 1,1,1,1,1
+"Player1's turn.
+Player1 has rolled: 1,1,1,1,1
 End: true
 Categories left:
 Chance
@@ -2399,6 +2550,7 @@ FullHouse
 Category: Pair
 Player1 has scored 2 more points
 Player1's score: 2
+Player2's turn.
 Player2 has rolled: 1,1,1,1,1
 End: true
 Categories left:
@@ -2420,6 +2572,7 @@ FullHouse
 Category: Pair
 Player2 has scored 2 more points
 Player2's score: 2
+Player1's turn.
 Player1 has rolled: 1,1,1,1,1
 End: true
 Categories left:
@@ -2440,6 +2593,7 @@ FullHouse
 Category: Ones
 Player1 has scored 5 more points
 Player1's score: 7
+Player2's turn.
 Player2 has rolled: 1,1,1,1,1
 End: true
 Categories left:
@@ -2460,6 +2614,7 @@ FullHouse
 Category: Ones
 Player2 has scored 5 more points
 Player2's score: 7
+Player1's turn.
 Player1 has rolled: 1,1,1,1,1
 End: true
 Categories left:
@@ -2479,6 +2634,7 @@ FullHouse
 Category: Yatzy
 Player1 has scored 50 more points
 Player1's score: 57
+Player2's turn.
 Player2 has rolled: 1,1,1,1,1
 End: true
 Categories left:
@@ -2498,6 +2654,7 @@ FullHouse
 Category: Yatzy
 Player2 has scored 50 more points
 Player2's score: 57
+Player1's turn.
 Player1 has rolled: 1,1,1,1,1
 End: false
 Decisions: r,r,h,h,r
@@ -2519,6 +2676,7 @@ FullHouse
 Category: FourOfAKind
 Player1 has scored 4 more points
 Player1's score: 61
+Player2's turn.
 Player2 has rolled: 1,1,1,1,1
 End: false
 Decisions: r,r,h,h,r
@@ -2540,6 +2698,7 @@ FullHouse
 Category: FourOfAKind
 Player2 has scored 4 more points
 Player2's score: 61
+Player1's turn.
 Player1 has rolled: 1,1,1,1,1
 End: false
 Decisions: r,h,h,h,r
@@ -2560,6 +2719,7 @@ FullHouse
 Category: Fours
 Player1 has scored 0 more points
 Player1's score: 61
+Player2's turn.
 Player2 has rolled: 1,1,1,1,1
 End: false
 Decisions: r,h,h,h,r
@@ -2580,6 +2740,7 @@ FullHouse
 Category: Fours
 Player2 has scored 0 more points
 Player2's score: 61
+Player1's turn.
 Player1 has rolled: 1,1,1,1,1
 End: true
 Categories left:
@@ -2596,6 +2757,7 @@ FullHouse
 Category: FullHouse
 Player1 has scored 0 more points
 Player1's score: 61
+Player2's turn.
 Player2 has rolled: 1,1,1,1,1
 End: true
 Categories left:
@@ -2612,6 +2774,7 @@ FullHouse
 Category: FullHouse
 Player2 has scored 0 more points
 Player2's score: 61
+Player1's turn.
 Player1 has rolled: 1,1,1,1,1
 End: false
 Decisions: h,h,r,r,r
@@ -2632,6 +2795,7 @@ LargeStraight
 Category: Sixes
 Player1 has scored 0 more points
 Player1's score: 61
+Player2's turn.
 Player2 has rolled: 1,1,1,1,1
 End: false
 Decisions: h,h,r,r,r
@@ -2652,6 +2816,7 @@ LargeStraight
 Category: Sixes
 Player2 has scored 0 more points
 Player2's score: 61
+Player1's turn.
 Player1 has rolled: 1,1,1,1,1
 End: true
 Categories left:
@@ -2666,6 +2831,7 @@ LargeStraight
 Category: Threes
 Player1 has scored 0 more points
 Player1's score: 61
+Player2's turn.
 Player2 has rolled: 1,1,1,1,1
 End: true
 Categories left:
@@ -2680,6 +2846,7 @@ LargeStraight
 Category: Threes
 Player2 has scored 0 more points
 Player2's score: 61
+Player1's turn.
 Player1 has rolled: 1,1,1,1,1
 End: false
 Decisions: r,h,r,r,h
@@ -2698,6 +2865,7 @@ LargeStraight
 Category: LargeStraight
 Player1 has scored 0 more points
 Player1's score: 61
+Player2's turn.
 Player2 has rolled: 1,1,1,1,1
 End: false
 Decisions: r,h,r,r,h
@@ -2716,6 +2884,7 @@ LargeStraight
 Category: LargeStraight
 Player2 has scored 0 more points
 Player2's score: 61
+Player1's turn.
 Player1 has rolled: 1,1,1,1,1
 End: false
 Decisions: r,h,h,h,r
@@ -2733,6 +2902,7 @@ SmallStraight
 Category: Twos
 Player1 has scored 0 more points
 Player1's score: 61
+Player2's turn.
 Player2 has rolled: 1,1,1,1,1
 End: false
 Decisions: r,h,h,h,r
@@ -2750,6 +2920,7 @@ SmallStraight
 Category: Twos
 Player2 has scored 0 more points
 Player2's score: 61
+Player1's turn.
 Player1 has rolled: 1,1,1,1,1
 End: true
 Categories left:
@@ -2761,6 +2932,7 @@ SmallStraight
 Category: ThreeOfAKind
 Player1 has scored 3 more points
 Player1's score: 64
+Player2's turn.
 Player2 has rolled: 1,1,1,1,1
 End: true
 Categories left:
@@ -2772,6 +2944,7 @@ SmallStraight
 Category: ThreeOfAKind
 Player2 has scored 3 more points
 Player2's score: 64
+Player1's turn.
 Player1 has rolled: 1,1,1,1,1
 End: false
 Decisions: h,r,r,h,h
@@ -2787,6 +2960,7 @@ SmallStraight
 Category: SmallStraight
 Player1 has scored 0 more points
 Player1's score: 64
+Player2's turn.
 Player2 has rolled: 1,1,1,1,1
 End: false
 Decisions: h,r,r,h,h
@@ -2802,6 +2976,7 @@ SmallStraight
 Category: SmallStraight
 Player2 has scored 0 more points
 Player2's score: 64
+Player1's turn.
 Player1 has rolled: 1,1,1,1,1
 End: false
 Decisions: r,r,h,r,h
@@ -2814,6 +2989,7 @@ TwoPairs
 Category: Chance
 Player1 has scored 5 more points
 Player1's score: 69
+Player2's turn.
 Player2 has rolled: 1,1,1,1,1
 End: false
 Decisions: r,r,h,r,h
@@ -2826,6 +3002,7 @@ TwoPairs
 Category: Chance
 Player2 has scored 5 more points
 Player2's score: 69
+Player1's turn.
 Player1 has rolled: 1,1,1,1,1
 End: true
 Categories left:
@@ -2834,6 +3011,7 @@ TwoPairs
 Category: Fives
 Player1 has scored 0 more points
 Player1's score: 69
+Player2's turn.
 Player2 has rolled: 1,1,1,1,1
 End: true
 Categories left:
@@ -2842,6 +3020,7 @@ TwoPairs
 Category: Fives
 Player2 has scored 0 more points
 Player2's score: 69
+Player1's turn.
 Player1 has rolled: 1,1,1,1,1
 End: false
 Decisions: h,r,h,r,h
@@ -2854,6 +3033,7 @@ TwoPairs
 Category: TwoPairs
 Player1 has scored 4 more points
 Player1's score: 73
+Player2's turn.
 Player2 has rolled: 1,1,1,1,1
 End: false
 Decisions: h,r,h,r,h
