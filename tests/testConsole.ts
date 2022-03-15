@@ -7,7 +7,13 @@ export async function testReadConsole(
     mockLog: jest.Mock<undefined, [string]>,
 ) {
     mockRead.mockReset();
-    mockRead.mockImplementation(async (_) => userInput.shift()!);
+    mockRead.mockImplementation(async (_) => {
+        const i = userInput.shift();
+        if (i === undefined) {
+            throw new Error('read() is called more than expected');
+        }
+        return i;
+    });
 
     await testConsole(
         consoleOutput,
