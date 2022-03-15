@@ -23,7 +23,8 @@ describe('ComputerPlayer', () => {
         ])('For roll: %o, should choose category: %s out of %o', async (roll, category, categories) => {
             const playerName = 'Player 1';
             await testConsole(
-                'ComputerPlayer',
+                `
+${playerName} has choosen category: ${category}`,
                 async () => {
                     expect(await new ComputerPlayer(playerName).getCategory(roll, categories))
                         .toStrictEqual(category);
