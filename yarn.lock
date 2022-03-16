@@ -2046,9 +2046,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-chomosuke@npm:^0.1.7":
-  version: 0.1.7
-  resolution: "eslint-config-chomosuke@npm:0.1.7"
+"eslint-config-chomosuke@npm:^0.2.1":
+  version: 0.2.1
+  resolution: "eslint-config-chomosuke@npm:0.2.1"
   dependencies:
     eslint-config-airbnb-base: ^15.0.0
     eslint-config-airbnb-typescript: ^16.1.0
@@ -2057,7 +2057,7 @@ __metadata:
     "@typescript-eslint/parser": ^5.0.0
     eslint: ^8.10.0
     eslint-plugin-import: ^2.25.4
-  checksum: 1eb4a9977d8e93448149b8381d248f3c7625fa2c6a207c882e9af29766e2f53e7df8fd0438449bddc53a5efd6b7379dafbfad80b5bccf5a019f4239f8eb4dbcf
+  checksum: 51984075c1278f713a895ec25effd40c2e2ad6712dd923d2a14ff89a4c0dcbc3dd7bda2c840a249f6d79780f2c95b9042410665ab032480029cfed909fcd93c3
   languageName: node
   linkType: hard
 
@@ -4539,7 +4539,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": ^5.11.0
     "@typescript-eslint/parser": ^5.11.0
     eslint: ^8.10.0
-    eslint-config-chomosuke: ^0.1.7
+    eslint-config-chomosuke: ^0.2.1
     eslint-import-resolver-node: ^0.3.6
     eslint-plugin-import: ^2.25.4
     fill-range: ^7.0.1
